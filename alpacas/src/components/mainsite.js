@@ -13,6 +13,7 @@ export function Mainsite () {
         <Menu>
             <Elementsul onClick={navigateToHistory}>O nas</Elementsul>
             <Elementsul>Aktualności
+            <Elementsli>coś tam</Elementsli>
             <Elementsli>coś tam</Elementsli>  
             </Elementsul>
             <Elementsul>Kontakt</Elementsul>

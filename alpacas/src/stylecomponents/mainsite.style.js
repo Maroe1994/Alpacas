@@ -4,6 +4,7 @@ export const Global= createGlobalStyle`
 body
 {
 margin: 0;
+background-color:darkgreen ;
 }`
 
 export const Menu=styled.div`
@@ -13,7 +14,7 @@ margin-left: auto;
 margin-right: auto;
 display:flex;
 justify-content:space-around;
-border:3px solid red;
+
 align-items: center;
 `
 export const Elementsul=styled.ul`
@@ -28,9 +29,16 @@ background-color: greenyellow;
 border-radius: 7px ;
 cursor: pointer;
 font-weight: 700;
+&:hover {
+    li{
+display: block;
+}
+}
+
 `
 export const Elementsli=styled.li`
 background-color: aqua;
 list-style-type: none;
-border-radius: 7px;
+display: none;
+
 `
