@@ -6,6 +6,7 @@ import './App.css';
 function App() {
   return (
     <BrowserRouter>
+    
     <Routes>
     <Route path="/" element={<Mainsite/>}/>
     <Route path="Historia" element={<History/>}/>

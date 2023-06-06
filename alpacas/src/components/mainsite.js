@@ -1,4 +1,4 @@
-import { Global,Menu,Elementsul,Elementsli } from "../stylecomponents/mainsite.style";
+import { Global,Menu,Elementsul,Elementsli,Wrapperli,Logo,Wrapperlogomenu} from "../stylecomponents/mainsite.style";
 import { useNavigate } from "react-router-dom";
 
 
@@ -9,15 +9,40 @@ export function Mainsite () {
       };
     return(
         <>
-        <Global/>
+        <Global/><Wrapperlogomenu>
+        <Logo src="myaplaca.png"></Logo>
         <Menu>
-            <Elementsul onClick={navigateToHistory}>O nas</Elementsul>
-            <Elementsul>Aktualności
+            <Elementsul onClick={navigateToHistory}>O nas
+            <Wrapperli>
             <Elementsli>coś tam</Elementsli>
-            <Elementsli>coś tam</Elementsli>  
+            <Elementsli>coś tam</Elementsli>
+            </Wrapperli>
             </Elementsul>
-            <Elementsul>Kontakt</Elementsul>
-        </Menu>
+            <Elementsul>Nasze Zwierzaki
+           <Wrapperli> 
+            <Elementsli>coś tam</Elementsli>
+            <Elementsli>coś tam</Elementsli>
+            </Wrapperli>
+            </Elementsul>
+            <Elementsul>Nasze Oferty
+            <Wrapperli>
+            <Elementsli>coś tam</Elementsli>
+            <Elementsli>coś tam</Elementsli>
+            </Wrapperli>
+            </Elementsul>
+            <Elementsul>Galeria
+            <Wrapperli>
+            <Elementsli>coś tam</Elementsli>
+            <Elementsli>coś tam</Elementsli>
+            </Wrapperli>
+            </Elementsul>
+            <Elementsul>Nasze Oferty
+            <Wrapperli>
+            <Elementsli>coś tam</Elementsli>
+            <Elementsli>coś tam</Elementsli>
+            </Wrapperli>
+            </Elementsul>
+        </Menu></Wrapperlogomenu>
         </>
     )
 }

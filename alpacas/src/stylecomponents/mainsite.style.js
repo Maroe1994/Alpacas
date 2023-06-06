@@ -6,19 +6,36 @@ body
 margin: 0;
 background-color:darkgreen ;
 }`
+export const Wrapperlogomenu=styled.div`
+width: 100%;
+height:200px;
 
+display: flex;
+`
+export const Logo=styled.img`
+
+background-image:url("myaplaca.png"); 
+width:230px;
+height:150px;
+margin-top: 10px;
+margin-right: 130px;
+padding: 0;
+
+
+
+`
 export const Menu=styled.div`
-width:800px;
-height: 100px;
-margin-left: auto;
-margin-right: auto;
+width:900px;
+height: 150px;
+margin-top: 10px;
 display:flex;
 justify-content:space-around;
 
 align-items: center;
+
 `
 export const Elementsul=styled.ul`
-width: 100px;
+width: 150px;
 height:30px;
 border:2px solid greenyellow;
 text-align: center;
@@ -27,18 +44,31 @@ line-height: 30px;
 padding-left: 0;
 background-color: greenyellow;
 border-radius: 7px ;
+font-size: 15px;
 cursor: pointer;
 font-weight: 700;
 &:hover {
-    li{
+li{
 display: block;
-}
-}
+opacity: 0,4;
 
-`
+  }
+}`
 export const Elementsli=styled.li`
-background-color: aqua;
+background-color: yellow;
 list-style-type: none;
 display: none;
+width: 150px;
+&:hover{
+    ul{
+        background-color: antiquewhite;
+    }
+}
 
+
+`
+export const Wrapperli=styled.div`
+width: 102px;
+border-radius: 10px;
+margin-top: 5px;
 `
