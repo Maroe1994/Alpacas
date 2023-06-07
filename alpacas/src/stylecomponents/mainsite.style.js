@@ -8,26 +8,30 @@ background-color:darkgreen ;
 }`
 export const Wrapperlogomenu=styled.div`
 width: 100%;
-height:200px;
-
+height:150px;
+background-color: #048500;
+justify-content: space-between;
 display: flex;
+
 `
 export const Logo=styled.img`
 
 background-image:url("myaplaca.png"); 
 width:230px;
-height:150px;
+height:120px;
 margin-top: 10px;
-margin-right: 130px;
+
 padding: 0;
-
-
+`
+export const Socialmedia=styled.div`
+width: 230px;
+height:150px;
 
 `
 export const Menu=styled.div`
 width:900px;
-height: 150px;
-margin-top: 10px;
+height: 120px;
+margin-top: 5px;
 display:flex;
 justify-content:space-around;
 
@@ -68,7 +72,7 @@ width: 150px;
 
 `
 export const Wrapperli=styled.div`
-width: 102px;
+width: 150px;
 border-radius: 10px;
-margin-top: 5px;
+margin-top: 3px;
 `

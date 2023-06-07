@@ -1,4 +1,4 @@
-import { Global,Menu,Elementsul,Elementsli,Wrapperli,Logo,Wrapperlogomenu} from "../stylecomponents/mainsite.style";
+import { Global,Menu,Elementsul,Elementsli,Wrapperli,Logo,Wrapperlogomenu,Socialmedia} from "../stylecomponents/mainsite.style";
 import { useNavigate } from "react-router-dom";
 
 
@@ -42,7 +42,8 @@ export function Mainsite () {
             <Elementsli>coś tam</Elementsli>
             </Wrapperli>
             </Elementsul>
-        </Menu></Wrapperlogomenu>
+        </Menu><Socialmedia></Socialmedia>
+        </Wrapperlogomenu>
         </>
     )
 }
