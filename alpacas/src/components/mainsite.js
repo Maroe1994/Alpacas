@@ -1,5 +1,9 @@
-import { Global,Menu,Elementsul,Elementsli,Wrapperli,Logo,Wrapperlogomenu,Socialmedia} from "../stylecomponents/mainsite.style";
-import { useNavigate } from "react-router-dom";
+import { Global,Menu,Elementsul,Elementsli,Wrapperli,Logo,Wrapperlogomenu,Socialmedia,Fotter,SlideWrapper,ImageBox,Thumbnail,ThumbnailList,Images} from "../stylecomponents/mainsite.style";
+import {  useNavigate } from "react-router-dom";
+import React from "react";
+
+import { Slider } from "./slider";
+
 
 
 export function Mainsite () {
@@ -7,10 +11,17 @@ export function Mainsite () {
     const navigateToHistory = () => {
         navigate("/Historia");
       };
+      const navigatetoMain= () => {
+        navigate("/");
+      }
+      
+      
+  
+    
     return(
         <>
         <Global/><Wrapperlogomenu>
-        <Logo src="myaplaca.png"></Logo>
+        <Logo onClick={navigatetoMain} src="myaplaca.png"></Logo>
         <Menu>
             <Elementsul onClick={navigateToHistory}>O nas
             <Wrapperli>
@@ -36,7 +47,7 @@ export function Mainsite () {
             <Elementsli>coś tam</Elementsli>
             </Wrapperli>
             </Elementsul>
-            <Elementsul>Nasze Oferty
+            <Elementsul>Kontakt
             <Wrapperli>
             <Elementsli>coś tam</Elementsli>
             <Elementsli>coś tam</Elementsli>
@@ -44,6 +55,19 @@ export function Mainsite () {
             </Elementsul>
         </Menu><Socialmedia></Socialmedia>
         </Wrapperlogomenu>
+        <SlideWrapper>
+      <ImageBox>
+      
+      <Slider/>
+      </ImageBox>
+      <ThumbnailList>
+         
+          <Thumbnail/>
+       
+      </ThumbnailList>
+    </SlideWrapper>
+        <Fotter>Copyright @2023 The Marek Rogiński</Fotter>
+
         </>
     )
 }

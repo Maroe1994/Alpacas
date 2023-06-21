@@ -4,11 +4,18 @@ export const Global= createGlobalStyle`
 body
 {
 margin: 0;
-background-color: red;
+background-color:#23ab0e ;
 }`
 
-export const Title=styled.div`
-background-color: blue;
-width: 600px;
-height:100px;
+
+export const Textbox=styled.div`
+width: 1000px;
+
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+border:3px solid rebeccapurple;
+font-size: 20px;
+margin-top: 50px;
+font-weight: bold;
 `
