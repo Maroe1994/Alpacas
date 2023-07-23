@@ -12,7 +12,7 @@ height:150px;
 background-color: #048500;
 justify-content: space-between;
 display: flex;
-
+position: relative;
 `
 export const Logo=styled.img`
 
@@ -25,7 +25,11 @@ padding: 0;
 `
 export const Socialmedia=styled.div`
 width: 230px;
-height:150px;
+height:130px;
+display: flex;
+justify-content: center;
+align-items: center;
+
 
 `
 export const Menu=styled.div`
@@ -164,12 +168,45 @@ export const SlideWrapper = styled.div`
   height: 100vh;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 90px;
+  margin-top: 50px;
 `;
 export const Images=styled.img`
 width:70vw;
-height:80vh;
-border:10px
+height:100vh;
+border-radius:20px;
+border: 3px solid greenyellow;
 `
 
+export const Findinput=styled.input`
+width: 200px;
+height:30px;
+-webkit-box-shadow: 9px 7px 40px -8px rgba(66, 68, 90, 1);
+-moz-box-shadow: 9px 7px 40px -8px rgba(66, 68, 90, 1);
+box-shadow: 9px 7px 40px -8px rgba(66, 68, 90, 1);
+border:2px solid blue;
+border-radius: 10px;
+font-size: 20px;
+::placeholder
+{
+  color: blueviolet;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
 
+`
+export const Title=styled.div`
+margin-left:auto;
+margin-right: auto;
+width:400px;
+height: 100px;
+
+text-align: center;
+line-height: 100px;
+font-size: 50px;
+font-weight: 700;
+margin-bottom: 5px;
+padding: 0;
+color:olivedrab;
+text-decoration: underline;
+letter-spacing: 3px;
+`

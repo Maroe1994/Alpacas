@@ -12,7 +12,7 @@ export function Slider ()  {
     useEffect(() => {
         const timer = setInterval(() => {
           setIndex(Math.floor(Math.random()*Items.length));
-        }, 2000);
+        }, 5000);
     
         return () => {
           clearInterval(timer);

@@ -1,4 +1,4 @@
-import { Global,Menu,Elementsul,Elementsli,Wrapperli,Logo,Wrapperlogomenu,Socialmedia,Fotter,SlideWrapper,ImageBox,Thumbnail,ThumbnailList,} from "../stylecomponents/mainsite.style";
+import { Global,Menu,Elementsul,Elementsli,Wrapperli,Logo,Wrapperlogomenu,Socialmedia,Fotter,SlideWrapper,ImageBox,Findinput,Title} from "../stylecomponents/mainsite.style";
 import {  useNavigate } from "react-router-dom";
 import React from "react";
 
@@ -25,20 +25,23 @@ export function Mainsite () {
         <Menu>
             <Elementsul onClick={navigateToHistory}>O nas
             <Wrapperli>
-            <Elementsli>coś tam</Elementsli>
-            <Elementsli>coś tam</Elementsli>
+            <Elementsli>Historia</Elementsli>
+            <Elementsli>Regulamin</Elementsli>
+            <Elementsli>Polityka prywatności</Elementsli>
             </Wrapperli>
             </Elementsul>
             <Elementsul>Nasze Zwierzaki
            <Wrapperli> 
-            <Elementsli>coś tam</Elementsli>
-            <Elementsli>coś tam</Elementsli>
+            <Elementsli>Alpaki</Elementsli>
+            <Elementsli>Papugi</Elementsli>
             </Wrapperli>
             </Elementsul>
             <Elementsul>Nasze Oferty
             <Wrapperli>
-            <Elementsli>coś tam</Elementsli>
-            <Elementsli>coś tam</Elementsli>
+            <Elementsli>Oferta grupowa</Elementsli>
+            <Elementsli>Dla szkół</Elementsli>
+            <Elementsli>Dla rodzin</Elementsli>
+            <Elementsli>Oferta indywidualna</Elementsli>
             </Wrapperli>
             </Elementsul>
             <Elementsul>Galeria
@@ -53,18 +56,17 @@ export function Mainsite () {
             <Elementsli>coś tam</Elementsli>
             </Wrapperli>
             </Elementsul>
-        </Menu><Socialmedia></Socialmedia>
+        </Menu><Socialmedia>
+        <Findinput placeholder="Szukaj..."/>
+        </Socialmedia>
         </Wrapperlogomenu>
+        <Title>My Alpaca</Title>
         <SlideWrapper>
       <ImageBox>
       
       <Slider/>
       </ImageBox>
-      <ThumbnailList>
-         
-          <Thumbnail/>
-       
-      </ThumbnailList>
+      
     </SlideWrapper>
         <Fotter>Copyright @2023 The Marek Rogiński</Fotter>
 

@@ -17,20 +17,23 @@ export function History (){
         <Menu>
             <Elementsul onClick={navigateToHistory}>O nas
             <Wrapperli>
-            <Elementsli>coś tam</Elementsli>
-            <Elementsli>coś tam</Elementsli>
+            <Elementsli>Historia</Elementsli>
+            <Elementsli>Regulamin</Elementsli>
+            <Elementsli>Polityka prywatności</Elementsli>
             </Wrapperli>
             </Elementsul>
             <Elementsul>Nasze Zwierzaki
            <Wrapperli> 
-            <Elementsli>coś tam</Elementsli>
-            <Elementsli>coś tam</Elementsli>
+           <Elementsli>Alpaki</Elementsli>
+            <Elementsli>Papugi</Elementsli>
             </Wrapperli>
             </Elementsul>
             <Elementsul>Nasze Oferty
             <Wrapperli>
-            <Elementsli>coś tam</Elementsli>
-            <Elementsli>coś tam</Elementsli>
+            <Elementsli>Oferta grupowa</Elementsli>
+            <Elementsli>Dla szkół</Elementsli>
+            <Elementsli>Dla rodzin</Elementsli>
+            <Elementsli>Oferta indywidualna</Elementsli>
             </Wrapperli>
             </Elementsul>
             <Elementsul>Galeria
