@@ -84,12 +84,14 @@ margin-top: 3px;
 
 export const Fotter=styled.div`
 width: 100%;
-height:200px;
+height:400px;
 text-align: center;
 line-height: 200px;
 font-size: 25px;
 background-color:#558554 ;
 font-weight: 700;
+display: flex;
+justify-content: space-around;
 
 `
 export const ThumbnailList = styled.div`
@@ -186,20 +188,25 @@ box-shadow: 9px 7px 40px -8px rgba(66, 68, 90, 1);
 border:2px solid blue;
 border-radius: 10px;
 font-size: 20px;
+font-family: "Krub",sans-serif;
 ::placeholder
 {
   color: blueviolet;
   font-weight: 700;
   letter-spacing: 3px;
 }
-
+:hover{
+  cursor: pointer;
+  color:green;
+  font-weight: 700;
+}
 `
 export const Title=styled.div`
 margin-left:auto;
 margin-right: auto;
 width:400px;
 height: 100px;
-
+font-family: "Verdana", sans-serif;
 text-align: center;
 line-height: 100px;
 font-size: 50px;
@@ -209,4 +216,40 @@ padding: 0;
 color:olivedrab;
 text-decoration: underline;
 letter-spacing: 3px;
+`
+export const Contact=styled.div`
+width:250px;
+height: 400px;
+border: 3px solid black;
+`
+export const Media=styled.div`
+width: 250px;
+height: 400px;
+border: 3px solid red;
+`
+export const Whatever=styled.div`
+width:250px;
+height:400px;
+border:3px solid blue;
+
+`
+export const Boxinformation=styled.div`
+width: 100%;
+height:600px;
+display: flex;
+justify-content: space-between;
+`
+export const Aboutus=styled.div`
+width: 50%;
+height: 600px;
+border: 3px solid violet;
+font-size: 18px;
+
+`
+export const Photobox=styled.div`
+width: 50%;
+height:600px;
+border: 5px solid black;
+font-family: "Cambria",  sans-serif;
+display: grid;
 `
