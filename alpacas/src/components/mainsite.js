@@ -1,4 +1,4 @@
-import { Global,Boxinformation,Aboutus,
+import { Global,Boxinformation,Aboutus,Tel,Email,Adress,Facebook,Instagram,Tictok,Politic,Histories, Rules,Copyright,
   Menu,Elementsul,Elementsli,Wrapperli,Logo,Wrapperlogomenu,Socialmedia,Fotter,SlideWrapper,ImageBox,Findinput,Title,Contact,Media,Whatever,Photobox} from "../stylecomponents/mainsite.style";
 import {  useNavigate } from "react-router-dom";
 import React from "react";
@@ -78,9 +78,22 @@ export function Mainsite () {
 <Photobox></Photobox>
 </Boxinformation>
         <Fotter>
-          <Contact/>
-        <Media/>
-        <Whatever/>
+          <Contact>
+            <Tel><img src="tel.png" alt="" width="40" height="40" margin-right="10"/>+48 531-610-730</Tel>
+            <Email><img src="email.png" alt="" width="40" height="40" />marekroginski1994@gmail.com</Email>
+            <Adress><img src="map1.png" alt="" width="40" height="40"  />ul. Witosławy 12 81-601 Gdynia</Adress>
+          </Contact>
+        <Media>
+         <Facebook> <img src="facebook.png" alt="" width="40" height="40"/>Facebook </Facebook>
+         <Instagram> <img src="instagram.png" alt="" width="40" height="40"/>Instagram</Instagram>
+         <Tictok> <img src="ticktok.png" alt="" width="40" height="40"/>Ticktock</Tictok>
+        </Media>
+<Whatever>
+  <Politic>Polityka prywatności</Politic>
+  <Histories>Historia</Histories>
+  <Rules>Regulamin</Rules>
+  <Copyright>Copyright © 2023 Marek Rogiński</Copyright>
+</Whatever>
         </Fotter>
 
         </>

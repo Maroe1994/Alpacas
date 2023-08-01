@@ -220,17 +220,18 @@ letter-spacing: 3px;
 export const Contact=styled.div`
 width:250px;
 height: 400px;
-border: 3px solid black;
+
+
 `
 export const Media=styled.div`
 width: 250px;
 height: 400px;
-border: 3px solid red;
+
 `
 export const Whatever=styled.div`
 width:250px;
 height:400px;
-border:3px solid blue;
+
 
 `
 export const Boxinformation=styled.div`
@@ -252,4 +253,101 @@ height:600px;
 border: 5px solid black;
 font-family: "Cambria",  sans-serif;
 display: grid;
+grid-template-columns: 100px 100px;
+grid-template-rows: 200px 200px 200px;
 `
+export const Tel=styled.div`
+width:250px;
+height:50px;
+text-decoration: overline;
+
+display: flex;
+
+align-items: center;
+font-size: 13px;
+margin-top: 100px;
+
+
+
+`
+export const Email=styled.div`
+width: 250px;
+height:50px;
+font-size: 13px;
+text-decoration: overline;
+display: flex;
+margin-top: 30px;
+align-items: center;
+`
+export const Adress=styled.div`
+width: 250px;
+height:50px;
+font-size: 13px;
+text-decoration: overline;
+display: flex;
+margin-top: 30px;
+align-items: center;
+
+`
+export const Facebook=styled.div`
+width: 250px;
+height:50px;
+font-size: 13px;
+margin-top: 100px;
+display: flex;
+margin-top: 100px;
+align-items: center;
+`
+export const Instagram=styled.div`
+width: 250px;
+height:50px;
+font-size: 13px;
+
+display: flex;
+margin-top: 30px;
+align-items: center;
+`
+export const Tictok=styled.div`
+width: 250px;
+height:50px;
+font-size: 13px;
+
+display: flex;
+margin-top: 30px;
+align-items: center;`
+
+export const Politic=styled.div`
+width: 250px;
+height:50px;
+font-size: 15px;
+
+display: flex;
+margin-top: 50px;
+align-items: center;`
+
+export const Histories=styled.div`
+width: 250px;
+height:50px;
+font-size: 15px;
+
+display: flex;
+margin-top: 20px;
+align-items: center;`
+
+export const Rules=styled.div`
+width: 250px;
+height:50px;
+font-size: 15px;
+
+display: flex;
+margin-top: 20px;
+align-items: center;`
+
+export const Copyright=styled.div`
+width: 250px;
+height:50px;
+font-size: 15px;
+
+display: flex;
+margin-top: 20px;
+align-items: center;`
