@@ -236,25 +236,27 @@ height:400px;
 `
 export const Boxinformation=styled.div`
 width: 100%;
-height:600px;
+height:700px;
 display: flex;
 justify-content: space-between;
 `
 export const Aboutus=styled.div`
-width: 50%;
+width: 45%;
 height: 600px;
-border: 3px solid violet;
-font-size: 18px;
+margin-left: 30px;
+font-size: 17px;
+margin-right: 20px;
 
 `
 export const Photobox=styled.div`
-width: 50%;
+width: 60%;
 height:600px;
-border: 5px solid black;
 font-family: "Cambria",  sans-serif;
 display: grid;
-grid-template-columns: 100px 100px;
-grid-template-rows: 200px 200px 200px;
+grid-template-columns: 300px 200px 300px;
+grid-template-rows: 350px 200px 100px;
+column-gap: 10px;
+row-gap: 10px;
 `
 export const Tel=styled.div`
 width:250px;
@@ -351,3 +353,36 @@ font-size: 15px;
 display: flex;
 margin-top: 20px;
 align-items: center;`
+
+export const Firstphoto=styled.img`
+width:100%;
+height:100%;
+align-self: stretch;
+border-radius: 10px;
+`
+export const Secondphoto=styled.img`
+width:100%;
+height:100%;
+align-self: stretch;
+border-radius:10px;
+`
+export const Thirdphoto=styled.img`
+width:100%;
+height:100%;
+align-self: stretch;
+border-radius: 10px;
+`
+export const Fourthphoto=styled.img`
+width:100%;
+height:100%;
+align-self: stretch;
+border-radius: 10px;
+`
+export const Fivephoto=styled.img`
+width:100%;
+height:100%;
+align-self: stretch;
+border-radius: 10px;
+grid-row:2/3;
+grid-column: 2/4;
+`
