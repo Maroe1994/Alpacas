@@ -283,7 +283,6 @@ export const Politic=styled.div`
 width: 150px;
 height:50px;
 font-size: 15px;
-border:2px solid black;
 display: flex;
 margin-top: 50px;
 align-items: center;
@@ -307,13 +306,11 @@ font-size: 15px;
 display:flex;
 margin-top: 20px;
 align-items: center;
-border:2px solid black;
 padding: 0;
 :hover{
   color:white;
   text-decoration: underline;
   cursor: pointer;
-  
   text-underline-offset: 0.5em
 }
 `
@@ -325,7 +322,6 @@ font-size: 15px;
 display: flex;
 margin-top: 20px;
 align-items: center;
-border:2px solid black;
 text-decoration: underline 0.2em rgba(0, 0, 0, 0);
 padding: 0;
 :hover {
@@ -345,7 +341,6 @@ font-size: 15px;
 display: flex;
 margin-top: 20px;
 align-items: center;
-border:2px solid black;
 padding: 0;
 :hover{
   color:white;
