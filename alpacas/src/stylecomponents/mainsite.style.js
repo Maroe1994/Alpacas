@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle, css } from "styled-components";
+import styled, { createGlobalStyle} from "styled-components";
 
 export const Global= createGlobalStyle`
 body
@@ -86,7 +86,7 @@ export const Fotter=styled.div`
 width: 100%;
 height:400px;
 text-align: center;
-line-height: 200px;
+
 font-size: 25px;
 background-color:#558554 ;
 font-weight: 700;
@@ -94,47 +94,6 @@ display: flex;
 justify-content: space-around;
 
 `
-export const ThumbnailList = styled.div`
-  display: flex;
-  align-items: stretch;
-  width: 100%;
-  height: 15%;
-`;
- export const Thumbnail = styled.div`
-  cursor: pointer;
-  opacity: ${({ active }) => (active ? 1 : 0.6)};
-  background-image: url(${({ src }) => src});
-  background-size: cover;
-  background-position: center;
-  flex-grow: 1;
-
-  :hover {
-    opacity: 1;
-  }
-`;
-
-export const NavButton = styled.button`
-  cursor: pointer;
-  position: absolute;
-  top: 45%;
-  padding: 5px;
-  border-radius: 3px;
-  border: none;
-  background: rgba(255, 255, 255, 0.7);
-
-  ${({ position }) =>
-    position === 'left' &&
-    css`
-      left: 10px;
-    `}
-
-  ${({ position }) =>
-    position === 'right' &&
-    css`
-      right: 10px;
-    `}
-`;
-
 export const ImageCaption = styled.span`
   width: 100%;
   text-align: center;
@@ -231,14 +190,14 @@ height: 400px;
 export const Whatever=styled.div`
 width:250px;
 height:400px;
-
-
 `
 export const Boxinformation=styled.div`
 width: 100%;
 height:700px;
 display: flex;
 justify-content: space-between;
+margin-top: 100px;
+margin-bottom: 100px;
 `
 export const Aboutus=styled.div`
 width: 45%;
@@ -247,6 +206,7 @@ margin-left: 30px;
 font-size: 17px;
 margin-right: 20px;
 
+
 `
 export const Photobox=styled.div`
 width: 60%;
@@ -254,9 +214,10 @@ height:600px;
 font-family: "Cambria",  sans-serif;
 display: grid;
 grid-template-columns: 300px 200px 300px;
-grid-template-rows: 350px 200px 100px;
+grid-template-rows: 200px 250px 100px;
 column-gap: 10px;
 row-gap: 10px;
+margin-top: 50px;
 `
 export const Tel=styled.div`
 width:250px;
@@ -319,40 +280,81 @@ margin-top: 30px;
 align-items: center;`
 
 export const Politic=styled.div`
-width: 250px;
+width: 150px;
 height:50px;
 font-size: 15px;
-
+border:2px solid black;
 display: flex;
 margin-top: 50px;
-align-items: center;`
+align-items: center;
+
+transition: opacity 300ms, transform 300ms;
+:hover{
+  color:blue;
+ text-decoration:underline white;
+  cursor: pointer;
+  text-underline-offset: 0.5em;
+  opacity: 1;
+	transform: ease ;
+}
+
+`
 
 export const Histories=styled.div`
-width: 250px;
+width: 70px;
 height:50px;
 font-size: 15px;
-
-display: flex;
+display:flex;
 margin-top: 20px;
-align-items: center;`
+align-items: center;
+border:2px solid black;
+padding: 0;
+:hover{
+  color:white;
+  text-decoration: underline;
+  cursor: pointer;
+  
+  text-underline-offset: 0.5em
+}
+`
 
 export const Rules=styled.div`
-width: 250px;
+width: 80px;
 height:50px;
 font-size: 15px;
-
 display: flex;
 margin-top: 20px;
-align-items: center;`
+align-items: center;
+border:2px solid black;
+text-decoration: underline 0.2em rgba(0, 0, 0, 0);
+padding: 0;
+:hover {
+  color:white;
+  text-underline-offset: 0.5em;
+  cursor: pointer;
+  text-decoration-color: hotpink;
+  transition: text-decoration-color 700ms;
+  
+}
+`
 
 export const Copyright=styled.div`
 width: 250px;
 height:50px;
 font-size: 15px;
-
 display: flex;
 margin-top: 20px;
-align-items: center;`
+align-items: center;
+border:2px solid black;
+padding: 0;
+:hover{
+  color:white;
+  text-decoration: underline;
+  cursor: pointer;
+  text-decoration-color: rgba(0, 0, 255, 1);
+  text-underline-offset: 0.5em
+}
+`
 
 export const Firstphoto=styled.img`
 width:100%;
