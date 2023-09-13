@@ -3,7 +3,7 @@ import React from "react";
 import { Wrapperlogomenu,Logo,Menu,Elementsul,Elementsli,Wrapperli,Socialmedia,Findinput,Fotter,Contact,Email,Tel,Adress,Media,Facebook,Instagram,Tictok,Whatever,Politic,Histories,Rules,Copyright } from "../stylecomponents/mainsite.style";
 import { useNavigate } from "react-router-dom";
 
-export function Ouroffer() {
+export function Galeries() {
     const navigate = useNavigate();
     const navigateToHistory = () => {
         navigate("/Historia");
@@ -23,13 +23,12 @@ export function Ouroffer() {
       const navigatetoAlpacas= () => {
         navigate("/Alpaki");
       };
-      const navigatetoGaleries= () => {
-        navigate("/Galeria")
-      }
       const navigatetoOffer= () => {
         navigate("/Nasza_oferta")
       };
-      
+      const navigatetoGaleries= () => {
+        navigate("/Galeria")
+      }
     return (
         <>
         <Global/><Wrapperlogomenu>
@@ -72,7 +71,7 @@ export function Ouroffer() {
         <Findinput placeholder="Szukaj..."/>
         </Socialmedia>
         </Wrapperlogomenu>
-        Nasza oferta
+        Galeria
         <Fotter>
         <Contact>
           <Tel><img src="tel.png" alt="" width="40" height="40" margin-right="10"/>+48 531-610-730</Tel>

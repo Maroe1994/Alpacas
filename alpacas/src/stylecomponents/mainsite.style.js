@@ -71,9 +71,11 @@ width: 150px;
     ul{
         background-color: antiquewhite;
     }
+    
 }
-
-
+a{
+      text-decoration: none;
+    }
 `
 export const Wrapperli=styled.div`
 width: 150px;
@@ -190,6 +192,10 @@ height: 400px;
 export const Whatever=styled.div`
 width:250px;
 height:400px;
+a{
+  text-decoration: none;
+  color:black;
+}
 `
 export const Boxinformation=styled.div`
 width: 100%;
@@ -260,15 +266,24 @@ margin-top: 100px;
 display: flex;
 margin-top: 100px;
 align-items: center;
+:hover{
+  cursor: pointer;
+  color:whitesmoke;
+  transform: scale(1.2);
+}
 `
 export const Instagram=styled.div`
 width: 250px;
 height:50px;
 font-size: 13px;
-
 display: flex;
 margin-top: 30px;
 align-items: center;
+:hover{
+  cursor: pointer;
+  color:whitesmoke;
+  transform: scale(1.2);
+}
 `
 export const Tictok=styled.div`
 width: 250px;
@@ -277,7 +292,13 @@ font-size: 13px;
 
 display: flex;
 margin-top: 30px;
-align-items: center;`
+align-items: center;
+:hover{
+  cursor: pointer;
+  color:whitesmoke;
+  transform: scale(1.2);
+}
+`
 
 export const Politic=styled.div`
 width: 150px;
@@ -286,15 +307,15 @@ font-size: 15px;
 display: flex;
 margin-top: 50px;
 align-items: center;
-
+text-decoration: underline 0.2em rgba(0, 0, 0, 0);
 transition: opacity 300ms, transform 300ms;
 :hover{
-  color:blue;
- text-decoration:underline white;
-  cursor: pointer;
+  color:white;
   text-underline-offset: 0.5em;
-  opacity: 1;
-	transform: ease ;
+  cursor: pointer;
+  text-decoration-color: greenyellow;
+  transition: text-decoration-color 700ms;
+  
 }
 
 `
@@ -306,12 +327,14 @@ font-size: 15px;
 display:flex;
 margin-top: 20px;
 align-items: center;
+text-decoration: underline 0.2em rgba(0, 0, 0, 0);
 padding: 0;
 :hover{
   color:white;
-  text-decoration: underline;
+  text-underline-offset: 0.5em;
   cursor: pointer;
-  text-underline-offset: 0.5em
+  text-decoration-color: greenyellow;
+  transition: text-decoration-color 700ms;
 }
 `
 
@@ -328,7 +351,7 @@ padding: 0;
   color:white;
   text-underline-offset: 0.5em;
   cursor: pointer;
-  text-decoration-color: hotpink;
+  text-decoration-color: greenyellow;
   transition: text-decoration-color 700ms;
   
 }
@@ -341,13 +364,14 @@ font-size: 15px;
 display: flex;
 margin-top: 20px;
 align-items: center;
+text-decoration: underline 0.2em rgba(0, 0, 0, 0);
 padding: 0;
 :hover{
   color:white;
-  text-decoration: underline;
+  text-underline-offset: 0.5em;
   cursor: pointer;
-  text-decoration-color: rgba(0, 0, 255, 1);
-  text-underline-offset: 0.5em
+  text-decoration-color: greenyellow;
+  transition: text-decoration-color 700ms;
 }
 `
 

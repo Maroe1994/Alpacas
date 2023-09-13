@@ -28,6 +28,12 @@ export function Mainsite () {
       const navigatetoAlpacas= () => {
         navigate("/Alpaki");
       };
+      const navigatetoGaleries= () => {
+        navigate("/Galeria")
+      }
+      const navigatetoOffer= () => {
+        navigate("/Nasza_oferta")
+      };
     
     return(
         <>
@@ -36,7 +42,7 @@ export function Mainsite () {
         <Menu>
             <Elementsul >O nas
             <Wrapperli>
-            <Elementsli onClick={navigateToHistory}>Historia</Elementsli>
+          <a href="/Historia" target="blank" >  <Elementsli onClick={navigateToHistory}>Historia</Elementsli></a>
             <Elementsli onClick={navigatetoRules}>Regulamin</Elementsli>
             <Elementsli onClick={navigatetoPolitic}>Polityka prywatności</Elementsli>
             </Wrapperli>
@@ -47,7 +53,7 @@ export function Mainsite () {
             <Elementsli onClick={navigatetoParrots}>Papugi</Elementsli>
             </Wrapperli>
             </Elementsul>
-            <Elementsul>Nasze Oferty
+            <Elementsul onClick={navigatetoOffer}>Nasze Oferty
             <Wrapperli>
             <Elementsli>Oferta grupowa</Elementsli>
             <Elementsli>Dla szkół</Elementsli>
@@ -55,7 +61,7 @@ export function Mainsite () {
             <Elementsli>Oferta indywidualna</Elementsli>
             </Wrapperli>
             </Elementsul>
-            <Elementsul>Galeria
+            <Elementsul onClick={navigatetoGaleries}>Galeria
             <Wrapperli>
             <Elementsli>coś tam</Elementsli>
             <Elementsli>coś tam</Elementsli>
@@ -105,9 +111,9 @@ export function Mainsite () {
          <Tictok> <img src="ticktok.png" alt="" width="40" height="40"/>Ticktock</Tictok>
         </Media>
 <Whatever>
-  <Politic>Polityka prywatności</Politic>
-  <Histories>Historia </Histories>
-  <Rules>Regulamin</Rules>
+<a href="/Polityka_prywatności" target="blank" > <Politic  onClick={navigatetoPolitic}>Polityka prywatności</Politic></a>
+ <a href="/Historia" target="blank"> <Histories onClick={navigateToHistory}>Historia</Histories></a>
+ <a href="/Regulamin" target="blank"> <Rules onClick={navigatetoRules}>Regulamin</Rules></a>
   <Copyright>Copyright © 2023 Marek Rogiński</Copyright>
 </Whatever>
         </Fotter>

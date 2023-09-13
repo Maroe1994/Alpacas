@@ -74,9 +74,9 @@ export function History (){
          <Tictok> <img src="ticktok.png" alt="" width="40" height="40"/>Ticktock</Tictok>
         </Media>
 <Whatever>
-  <Politic>Polityka prywatności</Politic>
-  <Histories>Historia</Histories>
-  <Rules>Regulamin</Rules>
+ <a href="/Polityka_prywatności" target="blank" > <Politic  onClick={navigatetoPolitic}>Polityka prywatności</Politic></a>
+ <a href="/Historia" target="blank"> <Histories onClick={navigateToHistory}>Historia</Histories></a>
+ <a href="/Regulamin" target="blank"> <Rules onClick={navigatetoRules}>Regulamin</Rules></a>
   <Copyright>Copyright © 2023 Marek Rogiński</Copyright>
 </Whatever>
         </Fotter>
