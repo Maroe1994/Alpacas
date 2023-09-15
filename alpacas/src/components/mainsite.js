@@ -42,7 +42,7 @@ export function Mainsite () {
         <Menu>
             <Elementsul >O nas
             <Wrapperli>
-          <a href="/Historia" target="blank" >  <Elementsli onClick={navigateToHistory}>Historia</Elementsli></a>
+          <a href="/Historia" target="_blank" >  <Elementsli onClick={navigateToHistory}>Historia</Elementsli></a>
             <Elementsli onClick={navigatetoRules}>Regulamin</Elementsli>
             <Elementsli onClick={navigatetoPolitic}>Polityka prywatności</Elementsli>
             </Wrapperli>

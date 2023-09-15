@@ -21,7 +21,7 @@ export function Ruless (){
     const navigatetoAlpacas= () => {
       navigate("/Alpaki");
     };
-    const navigatetoOffer= () => {
+   const navigatetoOffer= () => {
       navigate("/Nasza_oferta")
     };
     const navigatetoParrots= () => {

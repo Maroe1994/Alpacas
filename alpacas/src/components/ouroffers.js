@@ -2,7 +2,7 @@ import { Global } from "../stylecomponents/history.style";
 import React from "react";
 import { Wrapperlogomenu,Logo,Menu,Elementsul,Elementsli,Wrapperli,Socialmedia,Findinput,Fotter,Contact,Email,Tel,Adress,Media,Facebook,Instagram,Tictok,Whatever,Politic,Histories,Rules,Copyright } from "../stylecomponents/mainsite.style";
 import { useNavigate } from "react-router-dom";
-
+import { Tables,Tr,Th,Td } from "../stylecomponents/ouroffer.style";
 export function Ouroffer() {
     const navigate = useNavigate();
     const navigateToHistory = () => {
@@ -72,7 +72,23 @@ export function Ouroffer() {
         <Findinput placeholder="Szukaj..."/>
         </Socialmedia>
         </Wrapperlogomenu>
-        Nasza oferta
+       Nasza oferta
+        <Tables>
+            
+        <Tr>
+<Th>
+fdgfgsdfg
+</Th>
+<Th>
+    fefrf
+</Th>
+        </Tr>
+        <Tr>
+<Td>sdfvsfgsfd</Td>
+<Td>fgsdgdfg</Td>
+<Th>ffd</Th>
+        </Tr>
+        </Tables>
         <Fotter>
         <Contact>
           <Tel><img src="tel.png" alt="" width="40" height="40" margin-right="10"/>+48 531-610-730</Tel>

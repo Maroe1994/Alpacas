@@ -71,7 +71,7 @@ export function Alpacas() {
         <Findinput placeholder="Szukaj..."/>
         </Socialmedia>
         </Wrapperlogomenu>
-        Papugi
+        Alpaki
         <Fotter>
         <Contact>
           <Tel><img src="tel.png" alt="" width="40" height="40" margin-right="10"/>+48 531-610-730</Tel>

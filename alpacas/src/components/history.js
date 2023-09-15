@@ -21,6 +21,12 @@ export function History (){
       const navigatetoAlpacas= () => {
         navigate("/Alpaki");
       };
+      const navigatetoOffer= () => {
+        navigate("/Nasza_oferta")
+      };
+      const navigatetoGaleries= () => {
+        navigate("/Galeria")
+      }
     return(
    <> <Global/> <Wrapperlogomenu>
         <Logo onClick={navigatetoMain} src="myaplaca.png"></Logo>
@@ -38,7 +44,7 @@ export function History (){
             <Elementsli>Papugi</Elementsli>
             </Wrapperli>
             </Elementsul>
-            <Elementsul>Nasze Oferty
+            <Elementsul onClick={navigatetoOffer}>Nasze Oferty
             <Wrapperli>
             <Elementsli>Oferta grupowa</Elementsli>
             <Elementsli>Dla szkół</Elementsli>
@@ -46,7 +52,7 @@ export function History (){
             <Elementsli>Oferta indywidualna</Elementsli>
             </Wrapperli>
             </Elementsul>
-            <Elementsul>Galeria
+            <Elementsul onClick={navigatetoGaleries}>Galeria
             <Wrapperli>
             <Elementsli>coś tam</Elementsli>
             <Elementsli>coś tam</Elementsli>

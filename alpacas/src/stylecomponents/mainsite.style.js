@@ -73,14 +73,16 @@ width: 150px;
     }
     
 }
-a{
-      text-decoration: none;
-    }
+
 `
 export const Wrapperli=styled.div`
 width: 150px;
 border-radius: 10px;
 margin-top: 3px;
+a{
+  text-decoration: none;
+  color:black;
+}
 `
 
 
