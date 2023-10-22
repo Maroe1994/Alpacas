@@ -16,15 +16,15 @@ font-weight: 700;
 font-size: 40px;
 font-family: Georgia, sans-serif;
 text-decoration: underline;
-margin-top: 30px;
-margin-bottom: 30px;
+margin-top: 20px;
+margin-bottom: 10px;
 h3{
     margin-bottom:10px;
 }
 h6{
     margin-top: 10px;
     font-family: Georgia, sans-serif ;
-    font-size: 25px;
+    font-size: 22px;
 }
 `
 export const Firstacapit=styled.div`
@@ -74,4 +74,50 @@ span{
     font-weight: 800;
     font-size: 25px;
 }
+`
+export const Fiveacapit=styled.div`
+width:1200px;
+margin-left: auto;
+margin-right: auto;
+font-size: 20px;
+font-weight: 500;
+li{
+    color:#003d75;
+}
+li:last-child{
+    color:black
+}
+span{
+    color:green!;
+}
+`
+export const Sixacapit=styled.div`
+width:1200px;
+margin-left: auto;
+margin-right: auto;
+font-size: 20px;
+font-weight: 500;
+color:#003d75;
+`
+export const Sevenacapit=styled.div`
+width:1200px;
+margin-left: auto;
+margin-right: auto;
+font-size: 20px;
+font-weight: 500;
+`
+export const Eightacapit=styled.div`
+width:1200px;
+margin-left: auto;
+margin-right: auto;
+font-size: 20px;
+font-weight: 500;
+
+`
+export const Nineacapit=styled.div`
+width:1200px;
+margin-left: auto;
+margin-right: auto;
+font-size: 20px;
+font-weight: 500;
 `

@@ -3,7 +3,7 @@ import { Global } from "../stylecomponents/history.style";
 import React from "react";
 import { Wrapperlogomenu,Logo,Menu,Elementsul,Elementsli,Wrapperli,Socialmedia,Findinput,Rules ,Tel,Contact,Fotter,Email,Adress,Media,Facebook,Instagram,Tictok,Whatever,Politic,Histories,Copyright } from "../stylecomponents/mainsite.style";
 import { useNavigate } from "react-router-dom";
-import { Titlepolitic,Firstacapit,Secondacapit,Thirdacapit,Fouracapit } from "../stylecomponents/politic.style";
+import { Titlepolitic,Firstacapit,Secondacapit,Thirdacapit,Fouracapit, Fiveacapit,Sixacapit,Sevenacapit,Eightacapit, Nineacapit } from "../stylecomponents/politic.style";
 
 export function Politics() {
     const navigate = useNavigate();
@@ -139,7 +139,117 @@ export function Politics() {
           </li>
         </ol>
         </Fouracapit>
-        <Titlepolitic><h6>Odbiorcy danych oraz zamiar przekazywania danych do Państwa spoza EOG lub organizacji międzynarodowej</h6></Titlepolitic>
+        <Titlepolitic><h6>§4. Odbiorcy danych oraz zamiar przekazywania danych do Państwa spoza EOG lub organizacji międzynarodowej</h6></Titlepolitic>
+        <Fiveacapit>
+          <ol> Odbiorcami Twoich danych osobowych są:
+            <li>Jeśli wyraziłeś zgodę na ciasteczka marketingowe, Twoje dane zapisane w plikach cookies będą przekazywane do naszych partnerów reklamowych.</li>
+            <li>Jeśli wyraziłeś zgodę na ciasteczka analityczne, Twoje dane zapisane w plikach cookies, przetwarzane będą przez podmiot dostarczający oprogramowanie
+              do analizy ruchu na naszej stronie (np. Google Analytics).
+            </li>
+            <li>Twoje dane nie są przekazywane do Państw spoza EOG lub organizacji miedzynarodowych, z wyjątkiem partnerów wymienionych poniżej:
+              <ol>
+              <span> 
+                 <li>Google Inc. z siedzibą w USA w zakresie analityki ruchu na stronie w systemie Google Analytics oraz dostarczania nowych
+                  dodatkowych funkcji(takich jak Google Maps,Google Search Console) związanych z prawidłowym funkcjonowaniem strony oraz wyświetlaniem 
+                  wyników wyszukiwania. Zobacz jak Google przetwarz i chroni Twoje dane. Ten dodatek do przeglądarki umożliwi Ci zarządzanie zakresem
+                  i poziomem dostępu do danych zbieranych przez Google Analytics.
+                 </li>
+                 <li>Google Inc. z siedzibą w USA w zakresie reklam i mierzenia ich skuteczności w systemie Google Ads. Zobacz jak Google przetwarza i chroni
+                  Twoje dane. Tutaj możesz zarządzać swoimi preferencjami i informacjami w systemie reklamowym Google.
+                 </li>
+                 <li>Facebook Inc. z siedzibą w USA w zakresie obsługi konta i dostepu do danych w serwisach społecznościowych(Facebook,Instagram), reklam
+                  i mierzenia ich skuteczności związanych z instalacją na stronie pkisela Facebooka  oraz API Konwersji. Zobacz jak Facebook przetwarza i chroni
+                  Twoje dane.
+                 </li>
+              </span>
+              </ol>
+            </li>
+          </ol>
+        </Fiveacapit>
+        <Titlepolitic><h6>§5. Termin przechowywania danych</h6></Titlepolitic>
+        <Sixacapit>Nie jesteśmy w stanie ustalić w przez jaki okres będziemy przetwarzać Twoje dane osobowe.Jesli przekazałes nam
+          swoje dane w formularzu lub w wiadomości e-mail w  celach kontaktowych to Twoje dane będziemy przechowywac do momentu złożenia
+          przez Ciebie żądania usunięcia tych danych lub sprzeciwu wobec przetwarzania, ale również w przypadku, w którym uznamy, że 
+          zrealizowaliśmy prawnie uzasadniony interes Administratora.
+        </Sixacapit>
+        <Titlepolitic><h6>§6. Prawa użytkowników</h6></Titlepolitic>
+        <Sevenacapit>
+      <ol>W związku z przetwarzaniem twoich danych przysługują Ci następujące prawa:
+<li>Dostępu do treści swoich danych.</li>
+<li>Prawo ich sprostowania, usunięcia, ograniczenia przetwarzania.</li>
+<li>Prawo do przenoszenia danych.</li>
+<li>Prawo wniesienia sprzeciwu.</li>
+<li>Prawo do cofnięcia zgody na ich przetwarzanie w dowolnym momencie i w dwowlnej formie, chyba że przetwarzanie Państwa danych odbywa siew celu
+  wykonywania umowy przez Administartora, w celu wywiązania się przez Administartora z obowiązków prawnych wzgledem instytucji państwowych lub w celu
+  realizacji prawnie uzasadnionych interesów Administartora.
+</li>
+<li>Masz także prawo do wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych(na adres Urzędu Ochrony Danych Osobowych ul.Stawki 2, 00-193 Warszawa)</li>
+<li>Więcej informacji w przedmiocie  ochrony danych osobowych mogą Państwo otrzymać na stronie internetowej Urzędu Ochrony Danych Osobowych
+  <a href="www.uodo.pl.gov.pl" alt="">www.uodo.gov.pl</a>
+</li>
+</ol>
+</Sevenacapit>
+<Titlepolitic><h6>§7. Informacja o ciasteczkach</h6></Titlepolitic>
+<Eightacapit>
+  <ol>
+<li>Na naszej stronie wykorzystujemy ciasteczka (pliki cookies).</li>
+<li>Ciasteczka (pliki cookies) są niewielkimi plikami tekstowymi przechowywanymi na urządzeniach użytkowników podczas przeglądania
+  strony internetowej. Są one wykorzystywane w celu ułatwienia korzystania z naszej strony, poprawienia jakości usług oraz umozliwienia analizy ruchu
+  i zachowań uzytkowników.
+</li>
+<li>Ciasteczka mogą być stałe (trwałe) lub tymczasowe (sesyjne).Stałe ciasteczka sa przechowywane na urządzeniu uzytkownika przez określony czas  
+lub do momentu usunięcia ich przez uzytkownika. Tymczasowe ciasteczka są usuwane po zamknięciu przeglądarki.
+</li>
+<li>Wykorzystujemy ciasteczka własne oraz ciasteczka stron trzecich. Ciasteczka własne sa wykorzystywane w celu zapewnienia prawidłowego
+  działania strony, personalizacji treści, zapisywania preferencji użytkowników oraz analizy statystyk. Ciasteczka analityczne są wykorzystywane przez zewnętrznę
+  narzędzia analityczne, reklamowe oraz do integracji z mediami społecznosciowymi.
+</li>
+<li>Użytkownicy maja prawo kontrolować i ograniczać sposób, w jaki ciasteczka są wykorzystywane na naszej stronie.  Większość przeglądarek internetowytch 
+  umozliwia zarządzanie plikami cookies, w tym blokowanie, ograniczanie lub usuwanie ciasteczek. Szczegółowe informacje na temat zarządzania ciateczkami
+  można znaleźć w ustwieniach przeglądarki użytkownika.
+</li>
+<li>Nateży pamietac że wyłączenie lub ograniczenie ciateczek może wpłynąć na funkcjonalność strony oraz jkakość świadczonych usług</li>
+<li>Na naszej stronie wykorzystujemy rożne rodzaje ciasteczek, aby lepiej dostosować się do potzeb użytkowników i zapewnić optymalne korzystanie ze strony.</li>
+<li>Ciasteczka techniczne: są niezbędne do prawidłowego funkcjonowania witryny. Umożliwiają utrzymanie sesji użytkownika, obsługę formularzy, 
+  zapamiętywanie preferencji, oraz zapewnienie bezpieczeństwa strony.
+</li>
+<li>Ciasteczka marketingowe: Pozwalają na personalizacje reklam oraz prowadzenie działań remarketingowych, ktore są dostosowane do zainteresowań i
+  preferencji uzytkowników. Służą również do mierzenia skuteczności kampani reklamowych oraz optymalizacji treści reklamowych
+</li>
+<li>Ciasteczka analityczne: Są wykorzystywane do zbierania informacji o sposobie korzystania z witryny przez użytkowników, takich jak liczba odwiedzin,
+   strony odwiedzane, czas spędzony na stronie czy źródło ruchu.Uzyskane dane pomagaja w analizie optymalizacji strony, poprawiajac jej funkcjonowanie
+   i dostosowując treści do potrzeb użytkowników.
+</li>
+  </ol>
+</Eightacapit>
+<Titlepolitic><h6>§8. Dlaczego korzystamy z ciasteczek?</h6></Titlepolitic>
+<Nineacapit>
+  <ol>
+  <li>Komfort korzystania ze strony: Ciasteczka (pliki cookies) mogą znacząco wpłynąć na komfort korzystania ze strony internetowej.</li>
+  <li>Personalizacja treści: Ciasteczka pozwalają na dostosowanie wybranych treści do preferencji i zainteresowań uzytkownika, co sprawia
+     że strona staje sie bardziej atrakcyjna i użyteczna.
+  </li>
+  <li>Zapamiętywanie ustawień: Dzęki ciasteczkom strona może zapamiętywac wybrane przez użytkownika ustawienia, takie jak język, uklad czy kolorystyka
+co pozwala na szybsze i wygodniejsze korzystanie z serwisu.
+  </li>
+  <li>Logowanie: Ciasteczka umozliwiają przechowywanie informacji o zalogowanym użytkowniku, co pozwala na łatwe przełączanie się między różnymi
+    sekcjami bez konieczności ponownego logowania.
+  </li>
+  <li>Utrzymanie sesji: Dzięki ciasteczkom strona może śledzić aktywność użytkownika na różych podstronach, co pozwala na łatwe wracanie
+    do ostatnio odwiedzonych sekcji lub kontynuowanie niedokończonych działań, takich jak wypełnianie formularzy.
+  </li>
+  <li>Optymalizacja wydajności: Ciasteczka mogą być wykorzystane do analizy ruchu i zachowań użytkownika na stronie, co pomaga w optymalizacji
+    jej wydajności oraz dostarczeniu treści o wysokiej jakości.
+  </li>
+  <li>Reklamy: Ciasteczka umozliwiają wyswietlanie spersonalizowanych reklam, które sa dopasowane do zainteresowań i potrzeb uzytkownika.
+    Dzięki temu rekalmy są mniej inwazyjne i bardziej adekwatne
+  </li>
+  <li>Integracja z mediami społecznosciowymi: Ciasteczka pozwalają na integrację z serwisami społecznosciowymi, takimi jak Facebook, Twitter czy 
+Instagram, co umożliwia łatwe udostępnianie treśći oraz korzystanie z dodatkowych funkcji takich jak komentowanie czy polubienia.
+  </li>
+  </ol>
+</Nineacapit>
+<Titlepolitic><h6>§9. Funkcje ciasteczek technicznych</h6></Titlepolitic>
         <Fotter>
           <Contact>
             <Tel><img src="tel.png" alt="" width="40" height="40" margin-right="10"/>+48 531-610-730</Tel>
