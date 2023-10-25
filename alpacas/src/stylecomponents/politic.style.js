@@ -121,3 +121,25 @@ margin-right: auto;
 font-size: 20px;
 font-weight: 500;
 `
+export const Tenacapit=styled.div`
+width:1200px;
+margin-left: auto;
+margin-right: auto;
+font-size: 20px;
+font-weight: 500;
+`
+export const Elevenacapit=styled.div`
+width:1200px;
+margin-left: auto;
+margin-right: auto;
+font-size: 20px;
+font-weight: 500;
+`
+export const Tvelveacapit=styled.div`
+width:1200px;
+margin-left: auto;
+margin-right: auto;
+font-size: 20px;
+font-weight: 500;
+`
+
