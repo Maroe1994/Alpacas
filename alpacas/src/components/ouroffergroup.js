@@ -3,8 +3,8 @@ import { Tables,Td,Th,Tr } from "../stylecomponents/ouroffergroup.style";
 
 export function Offergroup (props) {
     return(
-        <>
-        <Tables>{props.text}
+        <>{props.text}
+        <Tables>
 
     <Tr>
         <Th>bhgrs</Th>

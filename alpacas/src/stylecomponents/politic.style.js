@@ -141,5 +141,6 @@ margin-left: auto;
 margin-right: auto;
 font-size: 20px;
 font-weight: 500;
+margin-bottom: 100px;
 `
 

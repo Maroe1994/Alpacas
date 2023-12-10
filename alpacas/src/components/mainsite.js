@@ -2,6 +2,7 @@ import { Global,Boxinformation,Aboutus,Tel,Email,Adress,Facebook,Instagram,Ticto
   Menu,Elementsul,Elementsli,Wrapperli,Logo,Wrapperlogomenu,Socialmedia,Fotter,SlideWrapper,ImageBox,Findinput,Title,Contact,Media,Whatever,Photobox} from "../stylecomponents/mainsite.style";
 import {  useNavigate } from "react-router-dom";
 import React from "react";
+import { Examplemodal } from "./Examplemodal";
 
 import { Slider } from "./slider";
 
@@ -99,6 +100,7 @@ export function Mainsite () {
   <Fivephoto src="alpaca5.jpg" />
 </Photobox>
 </Boxinformation>
+<Examplemodal/>
         <Fotter>
           <Contact>
             <Tel><img src="tel.png" alt="" width="40" height="40" margin-right="10"/>+48 531-610-730</Tel>

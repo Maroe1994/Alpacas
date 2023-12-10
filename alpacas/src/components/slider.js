@@ -2,8 +2,8 @@
 import { SlideWrapper,ImageBox,Images } from "../stylecomponents/mainsite.style"
 import { useState,useEffect } from "react";
 
-
 const Items= ["animala.jpg","animalb.jpg","animalc.jpg","animald.jpg","animale.jpg"]
+
 
 
 
