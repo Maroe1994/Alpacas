@@ -2,8 +2,23 @@ import { Global } from "../stylecomponents/history.style";
 import React from "react";
 import { Wrapperlogomenu,Logo,Menu,Elementsul,Elementsli,Wrapperli,Socialmedia,Findinput,Fotter,Contact,Tel,Email,Adress,Media,Facebook,Instagram,Tictok,Whatever,Politic,Histories,Rules,Copyright } from "../stylecomponents/mainsite.style";
 import { useNavigate } from "react-router-dom";
+import { Propsmodal } from "./propsmoda";
 
 export function Ruless (){
+  const imagesArray =  [{ src: "animala.jpg",id:1},
+    { src: "animald.jpg",id:2 },
+    {src:"animalc.jpg",id:3}
+  ];
+  
+  const nextArray = [{ src: "animalb.jpg",id:1 },
+    { src: "animala.jpg",id:2 },
+    { src: "animalc.jpg",id:3 },
+  ];
+
+  
+ 
+  
+  
   const navigate = useNavigate();
   const navigateToHistory = () => {
       navigate("/Historia");
@@ -69,7 +84,9 @@ export function Ruless (){
           </Elementsul>
       </Menu><Socialmedia> <Findinput placeholder="Szukaj..."/></Socialmedia>
       </Wrapperlogomenu>
-      zasady
+      
+      <Propsmodal arr={imagesArray}/>
+      <Propsmodal arr={nextArray}/>
    <Fotter>
     <Contact>
       <Tel><img src="tel.png" alt="" width="40" height="40" margin-right="10"/>+48 531-610-730</Tel>
