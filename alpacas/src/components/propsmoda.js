@@ -1,63 +1,58 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import StyledModal from 'react-modal';
 
-import StyledModal from 'react-modal'
-import { useState,useEffect } from "react";
+export function Propsmodal({ arr }) {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [image, setImage] = useState(0);
 
+  function openModal() {
+    setModalOpen(true);
+  }
 
+  function closeModal() {
+    setModalOpen(false);
+  }
 
- 
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setImage((prevImage) => (prevImage + 1) % arr.length);
+    }, 5000);
 
+    return () => {
+      clearInterval(timer);
+    };
+  }, [arr.length]);
 
+  function nextImage() {
+    setImage((prevImage) => (prevImage + 1) % arr.length);
+  }
 
-export function Propsmodal({arr}) {
-     
-  
-    
-    const[modalopen,setmodalopen]=useState(false);
-    function openModal(){
-        setmodalopen(true);
-        }
-    function closeModal(){
-        setmodalopen(false);
-    }
-    const[image,setimage]=useState(0);
-    useEffect(() => {
-        const timer = setInterval(() => {
-          setimage(Math.floor(Math.random()*Array.length));
-        }, 5000);
-    
-        return () => {
-          clearInterval(timer);
-        };
-      }, []);
-    function nextimage () {
-        setimage((prevImage) => (prevImage + 1) % arr.length); 
-       
-        if (image> [arr].length){
-           setimage(0) 
-        }
-    
-        }
-    function previousimage (){
-        setimage((prevImage) => (prevImage - 1 + arr.length) % arr.length);
-        
-        if (image< 0){
-            setimage([arr].length)
-        }
-    }
-    return(
-        <div>
-            <button onClick={openModal}>open modal</button>
-    <StyledModal  width={1400} height={690} isOpen={modalopen} ariaHideApp={false}  >
-        
-    {arr.map(({src}) => {
-      return <img key={src} className="Imgmodal" width={1360} height={560} src={arr[image].src} alt={image.src} />;
-    })} 
-        <button className="btnnext" onClick={nextimage}>+</button>
-        <button className="btnpreviuos" onClick={previousimage}>-</button>
+  function previousImage() {
+    setImage((prevImage) => (prevImage - 1 + arr.length) % arr.length);
+  }
 
-<button onClick={closeModal}>Zamknij</button>
-
-    </StyledModal>
+  return (
+    <div>
+      <button onClick={openModal}>Open Modal</button>
+      <StyledModal width={1400} height={690} isOpen={modalOpen} ariaHideApp={false}>
+        {arr.length > 0 && (
+          <img
+            key={arr[image].src}
+            className="Imgmodal"
+            width={1360}
+            height={560}
+            src={arr[image].src}
+            alt={arr[image].src}
+          />
+        )}
+        <button className="btnnext" onClick={nextImage}>
+          +
+        </button>
+        <button className="btnprevious" onClick={previousImage}>
+          -
+        </button>
+        <button onClick={closeModal}>Close</button>
+      </StyledModal>
     </div>
-)} ;
+  );
+}
