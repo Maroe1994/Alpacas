@@ -13,6 +13,7 @@ export function Ruless (){
   const nextArray = [{ src: "animalb.jpg",id:1 },
     { src: "animala.jpg",id:2 },
     { src: "animalc.jpg",id:3 },
+    {src:"animale.jpg", id:4}
   ];
 
   
