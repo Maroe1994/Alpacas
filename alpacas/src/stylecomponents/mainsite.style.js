@@ -271,6 +271,8 @@ export const Whatever = styled.div`
   @media screen and (max-width: 768px) {
     width: 90vw; // Przykładowa zmiana szerokości dla mniejszych ekranów
     /* Dodaj inne dostosowania stylu dla mniejszych ekranów */
+    border:3px solid red;
+    
   }
 
   a {
@@ -302,6 +304,7 @@ export const Aboutus = styled.div`
     width: 100%; // Pełna szerokość na mniejszych ekranach
     margin-left: 0;
     margin-right: 0;
+    
   }
 `;
 export const Photobox = styled.div`
@@ -360,6 +363,9 @@ export const Adress = styled.div`
   @media screen and (max-width: 768px) {
     width: 100%; // Pełna szerokość na mniejszych ekranach
     margin-top: 20px; // Dostosuj margines na mniejszych ekranach
+    margin-left: auto;
+    margin-right: auto;
+    
   }
 `;
 export const Facebook = styled.div`
@@ -438,6 +444,9 @@ export const Politic = styled.div`
     width: 100%; // Pełna szerokość na mniejszych ekranach
     margin-top: 20px; // Dostosuj margines na mniejszych ekranach
     font-size: 16px; // Dostosuj rozmiar czcionki na mniejszych ekranach
+    border:2px solid black;
+    display: flex;
+    justify-content: center;
   }
 
   :hover {

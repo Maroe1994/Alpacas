@@ -28,7 +28,7 @@ const ModalContent = styled.div`
   justify-content: center;
   margin-left: auto;
   margin-right:auto;
-  align-items: center;
+  margin-top: 150px;
 `;
 
 const CloseButton = styled.button`
@@ -45,22 +45,36 @@ const Image = styled.img`
 
 const NextButton = styled.button`
   margin-top: 20px;
+  cursor: pointer;
 `;
 
 const PreviousButton = styled.button`
-  margin-top: 20px;
+  margin-top: 40px;
+  cursor: pointer;
+  margin-right: 20px;
+`;
+const Photomodal=styled.img`
+width: 400px;
+height: 300px;
+border-radius: 10px;
+cursor: pointer;
 `;
 
-export function Propsmodal({ arr }) {
+export function Propsmodal({ arr,src }) {
   const [modalOpen, setModalOpen] = useState(false);
   const [image, setImage] = useState(0);
+  
+  
 
+  
   function openModal() {
     setModalOpen(true);
+    
   }
 
   function closeModal() {
     setModalOpen(false);
+    
   }
 
   useEffect(() => {
@@ -86,25 +100,26 @@ export function Propsmodal({ arr }) {
       closeModal();
     }
   }
+  
+  
 
   return (
     <div>
-      <button onClick={openModal}>Open Modal</button>
-      <ModalWrapper isOpen={modalOpen} onClick={handleWrapperClick}>
-        <ModalContent>
+      <Photomodal alt="titleimage" src={src} onClick={openModal}/>
+      <ModalWrapper  isOpen={modalOpen}  onClick={handleWrapperClick}>
+        <ModalContent  >
           {arr.length > 0 && (
             <Image 
               key={arr[image].src}
-              className="Imgmodal"
               src={arr[image].src}
               alt={arr[image].src}
             />
           )}
           <NextButton className="btnnext" onClick={nextImage}>
-            Next
+            Previous
           </NextButton>
           <PreviousButton className="btnprevious" onClick={previousImage}>
-            Previous
+            Next
           </PreviousButton>
           <CloseButton onClick={closeModal}>X</CloseButton>
         </ModalContent>

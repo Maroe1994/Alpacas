@@ -19,3 +19,18 @@ font-size: 20px;
 margin-top: 50px;
 font-weight: bold;
 `
+export const Wrappermodal=styled.div`
+width: 1400px;
+height:400px;
+display: flex;
+justify-content: space-between;
+margin-left: auto;
+margin-right: auto;
+margin-top: 20px;
+`
+
+export const Titlephoto=styled.caption`
+width: 400px;
+text-align: center;
+
+`

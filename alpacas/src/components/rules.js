@@ -3,6 +3,7 @@ import React from "react";
 import { Wrapperlogomenu,Logo,Menu,Elementsul,Elementsli,Wrapperli,Socialmedia,Findinput,Fotter,Contact,Tel,Email,Adress,Media,Facebook,Instagram,Tictok,Whatever,Politic,Histories,Rules,Copyright } from "../stylecomponents/mainsite.style";
 import { useNavigate } from "react-router-dom";
 import { Propsmodal } from "./propsmoda";
+import { Wrappermodal } from "../stylecomponents/rules.style";
 
 export function Ruless (){
   const imagesArray =  [{ src: "animala.jpg",id:1},
@@ -16,8 +17,9 @@ export function Ruless (){
     {src:"animale.jpg", id:4}
   ];
 
-  
- 
+  const Firsttitlephoto="animala.jpg"
+  const Secondtitlephoto="animale.jpg"
+  const Thirdtitlephoto="animald.jpg"
   
   
   const navigate = useNavigate();
@@ -85,9 +87,11 @@ export function Ruless (){
           </Elementsul>
       </Menu><Socialmedia> <Findinput placeholder="Szukaj..."/></Socialmedia>
       </Wrapperlogomenu>
-      
-      <Propsmodal arr={imagesArray}/>
-      <Propsmodal arr={nextArray}/>
+      <Wrappermodal>
+      <Propsmodal src={Firsttitlephoto} arr={imagesArray}/>
+      <Propsmodal src={Secondtitlephoto} arr={nextArray}/>
+      <Propsmodal src={Thirdtitlephoto}  arr={nextArray}/>
+      </Wrappermodal>
    <Fotter>
     <Contact>
       <Tel><img src="tel.png" alt="" width="40" height="40" margin-right="10"/>+48 531-610-730</Tel>
