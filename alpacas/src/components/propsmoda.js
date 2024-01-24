@@ -58,9 +58,14 @@ width: 400px;
 height: 300px;
 border-radius: 10px;
 cursor: pointer;
+:hover{
+  opacity: 0.8;
+  scale: 0.8;
+}
 `;
 
-export function Propsmodal({ arr,src }) {
+
+export function Propsmodal({ arr,src, }) {
   const [modalOpen, setModalOpen] = useState(false);
   const [image, setImage] = useState(0);
   

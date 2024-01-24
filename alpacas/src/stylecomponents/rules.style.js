@@ -34,3 +34,25 @@ width: 400px;
 text-align: center;
 
 `
+export const Figurephoto=styled.figure`
+
+
+`
+export const Figcaptionphoto=styled.figcaption`
+text-align: center;
+font-size: 20px;
+font-weight: 600;
+margin-top: 10px;
+color: ivory;
+`
+export const Titlegalleries=styled.div`
+margin-left: auto;
+margin-right: auto;
+width: 500px;
+height:50px;
+text-align: center;
+font-size: 40px;
+letter-spacing: 3px;
+font-weight: 800;
+margin-top: 30px;
+`

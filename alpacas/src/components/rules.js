@@ -3,7 +3,7 @@ import React from "react";
 import { Wrapperlogomenu,Logo,Menu,Elementsul,Elementsli,Wrapperli,Socialmedia,Findinput,Fotter,Contact,Tel,Email,Adress,Media,Facebook,Instagram,Tictok,Whatever,Politic,Histories,Rules,Copyright } from "../stylecomponents/mainsite.style";
 import { useNavigate } from "react-router-dom";
 import { Propsmodal } from "./propsmoda";
-import { Wrappermodal } from "../stylecomponents/rules.style";
+import { Wrappermodal,Figurephoto,Figcaptionphoto,Titlegalleries } from "../stylecomponents/rules.style";
 
 export function Ruless (){
   const imagesArray =  [{ src: "animala.jpg",id:1},
@@ -87,10 +87,17 @@ export function Ruless (){
           </Elementsul>
       </Menu><Socialmedia> <Findinput placeholder="Szukaj..."/></Socialmedia>
       </Wrapperlogomenu>
+      <Titlegalleries>Nasza Galeria:</Titlegalleries>
       <Wrappermodal>
-      <Propsmodal src={Firsttitlephoto} arr={imagesArray}/>
-      <Propsmodal src={Secondtitlephoto} arr={nextArray}/>
-      <Propsmodal src={Thirdtitlephoto}  arr={nextArray}/>
+    <Figurephoto> <Propsmodal src={Firsttitlephoto} arr={imagesArray}/>
+    <Figcaptionphoto>Papugi</Figcaptionphoto>
+    </Figurephoto> 
+    <Figurephoto>  <Propsmodal src={Secondtitlephoto} arr={nextArray}/>
+    <Figcaptionphoto>Orki</Figcaptionphoto>
+    </Figurephoto>
+    <Figurephoto>  <Propsmodal src={Thirdtitlephoto}  arr={nextArray}/>
+    <Figcaptionphoto>Tukany</Figcaptionphoto>
+    </Figurephoto>
       </Wrappermodal>
    <Fotter>
     <Contact>
