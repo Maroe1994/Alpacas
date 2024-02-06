@@ -3,6 +3,7 @@ import React from "react";
 import { Wrapperlogomenu,Logo,Menu,Elementsul,Elementsli,Wrapperli,Socialmedia,Findinput,Fotter,Contact,Email,Tel,Adress,Media,Facebook,Instagram,Tictok,Whatever,Politic,Histories,Rules,Copyright } from "../stylecomponents/mainsite.style";
 import { useNavigate } from "react-router-dom";
 import { Offergroup } from "./ouroffergroup";
+import { Titleoffer } from "../stylecomponents/ouroffergroup.style";
 
 export function Ouroffer() {
     const navigate = useNavigate();
@@ -58,10 +59,7 @@ export function Ouroffer() {
             </Wrapperli>
             </Elementsul>
             <Elementsul onClick={navigatetoGaleries}>Galeria
-            <Wrapperli>
-            <Elementsli>coś tam</Elementsli>
-            <Elementsli>coś tam</Elementsli>
-            </Wrapperli>
+           
             </Elementsul>
             <Elementsul>Kontakt
             <Wrapperli>
@@ -73,11 +71,12 @@ export function Ouroffer() {
         <Findinput placeholder="Szukaj..."/>
         </Socialmedia>
         </Wrapperlogomenu>
-       Nasza oferta
+       <Titleoffer>Cennik</Titleoffer>
         
-        <Offergroup text="Oferta grupowa" />
+        <Offergroup src="icongroup.jpg" text="Oferta grupowa" />
         <Offergroup text="Oferta dla rodzin" />
         <Offergroup text="Oferta dla szkół" />
+        <Offergroup text="Oferta indywidualna" />
         <Fotter>
         <Contact>
           <Tel><img src="tel.png" alt="" width="40" height="40" margin-right="10"/>+48 531-610-730</Tel>

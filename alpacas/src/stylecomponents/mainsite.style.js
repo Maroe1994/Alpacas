@@ -20,7 +20,9 @@ export const Wrapperlogomenu = styled.div`
   justify-content: space-between;
   display: flex;
   position: relative;
-
+  top: 0;
+  position: sticky;
+  z-index: 100;
   @media screen and (max-width: 600px) {
     height: 100px; // Dostosuj wysokość dla mniejszych ekranów
   }
@@ -130,12 +132,17 @@ export const Fotter = styled.div`
   font-weight: 700;
   display: flex;
   justify-content: space-around;
-
+  
   @media screen and (max-width: 768px) {
     flex-direction: column; // Zmiana kierunku flexbox na kolumnowy dla mniejszych ekranów
     height: auto; // Automatyczna wysokość dla lepszego dostosowania do zawartości
   }
 `;
+
+
+
+
+
 export const ImageCaption = styled.span`
   width: 100%;
   text-align: center;

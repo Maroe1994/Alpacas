@@ -29,11 +29,8 @@ margin-right: auto;
 margin-top: 20px;
 `
 
-export const Titlephoto=styled.caption`
-width: 400px;
-text-align: center;
 
-`
+
 export const Figurephoto=styled.figure`
 
 
@@ -55,4 +52,8 @@ font-size: 40px;
 letter-spacing: 3px;
 font-weight: 800;
 margin-top: 30px;
+background: linear-gradient(80deg,#bd1c4c,#bd1cbd);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
 `

@@ -12,7 +12,7 @@ const ModalWrapper = styled.div`
   background: rgba(0, 0, 0, 0.6);
   border: 3px solid black;
   justify-content: center;
-  
+  z-index: 2; // Wartość z-index dla modala
   
 `;
 
@@ -62,7 +62,24 @@ cursor: pointer;
   opacity: 0.8;
   scale: 0.8;
 }
-`;
+
+::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.3); /* Ustaw kolor tła z filtrem */
+    pointer-events: none; /* Upewnij się, że pseudo-element nie przechodzi przez zdarzenia myszy */
+    
+
+  }
+z-index: 1;
+filter:saturate(40%)
+`
+
 
 
 export function Propsmodal({ arr,src, }) {

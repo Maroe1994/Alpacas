@@ -2,8 +2,27 @@ import { Global } from "../stylecomponents/history.style";
 import React from "react";
 import { Wrapperlogomenu,Logo,Menu,Elementsul,Elementsli,Wrapperli,Socialmedia,Findinput,Fotter,Contact,Email,Tel,Adress,Media,Facebook,Instagram,Tictok,Whatever,Politic,Histories,Rules,Copyright } from "../stylecomponents/mainsite.style";
 import { useNavigate } from "react-router-dom";
+import { Propsmodal } from "./propsmoda";
+import { Wrappermodal,Figurephoto,Figcaptionphoto,Titlegalleries } from "../stylecomponents/rules.style";
 
 export function Galeries() {
+  const imagesArray =  [{ src: "animala.jpg",id:1},
+  { src: "animald.jpg",id:2 },
+  {src:"animalc.jpg",id:3}
+];
+
+const nextArray = [{ src: "animalb.jpg",id:1 },
+  { src: "animala.jpg",id:2 },
+  { src: "animalc.jpg",id:3 },
+  {src:"animale.jpg", id:4}
+];
+
+const Firsttitlephoto="animala.jpg"
+const Secondtitlephoto="animale.jpg"
+const Thirdtitlephoto="animald.jpg"
+
+
+
     const navigate = useNavigate();
     const navigateToHistory = () => {
         navigate("/Historia");
@@ -56,10 +75,7 @@ export function Galeries() {
             </Wrapperli>
             </Elementsul>
             <Elementsul onClick={navigatetoGaleries}>Galeria
-            <Wrapperli>
-            <Elementsli>coś tam</Elementsli>
-            <Elementsli>coś tam</Elementsli>
-            </Wrapperli>
+            
             </Elementsul>
             <Elementsul>Kontakt
             <Wrapperli>
@@ -71,7 +87,19 @@ export function Galeries() {
         <Findinput placeholder="Szukaj..."/>
         </Socialmedia>
         </Wrapperlogomenu>
-        Galeria
+        <Titlegalleries>Nasza Galeria:</Titlegalleries>
+      <Wrappermodal>
+    <Figurephoto> <Propsmodal src={Firsttitlephoto} arr={imagesArray}/>
+    <Figcaptionphoto>Papugi</Figcaptionphoto>
+    </Figurephoto> 
+    <Figurephoto>  <Propsmodal src={Secondtitlephoto} arr={nextArray}/>
+    <Figcaptionphoto>Orki</Figcaptionphoto>
+    </Figurephoto>
+    <Figurephoto>  <Propsmodal src={Thirdtitlephoto}  arr={nextArray}/>
+    <Figcaptionphoto>Tukany</Figcaptionphoto>
+    </Figurephoto>
+      </Wrappermodal>
+        
         <Fotter>
         <Contact>
           <Tel><img src="tel.png" alt="" width="40" height="40" margin-right="10"/>+48 531-610-730</Tel>

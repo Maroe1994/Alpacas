@@ -63,10 +63,7 @@ export function Mainsite () {
             </Wrapperli>
             </Elementsul>
             <Elementsul onClick={navigatetoGaleries}>Galeria
-            <Wrapperli>
-            <Elementsli>coś tam</Elementsli>
-            <Elementsli>coś tam</Elementsli>
-            </Wrapperli>
+            
             </Elementsul>
             <Elementsul>Kontakt
             <Wrapperli>
