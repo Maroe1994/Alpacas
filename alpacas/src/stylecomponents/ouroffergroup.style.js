@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Tables=styled.table`
-width:800px;
+width:auto;
 height:500px;
 
 margin-left: auto;
@@ -10,34 +10,34 @@ margin-top: 50px;
 margin-bottom: 80px;
 `
 export const Tr=styled.tr`
-width:80px;
-height:40px;
+width:100px;
+height:50px;
 
 :first-child{
     background-color: gray;
-    border-bottom: 3px dashed blue;
+ 
     width: 100px;
-    height: 100px;
-}
-:nth-child(3){
-    border-left: 3px dashed blue;
-}
-`
-export const Th=styled.th`
-width:50px;
-height: 50px;
-border:1px solid orange;
-:nth-child(3){
-    border-left: 3px dashed blue;
-}
-:first-child{
-    border-bottom: 3px dashed blue;
     height: 100px;
 }
 
 `
+export const Th=styled.th`
+width:200px;
+height: 50px;
+border:1px solid orange;
+:first-child{
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+}
+:last-child{
+    border-bottom: 1px solid orange;
+}
+
+
+`
 export const Td=styled.td`
-width:50px;
+width:100px;
 height:50px;
 border:2px solid violet;
 `
@@ -57,10 +57,21 @@ background-clip: text;
 letter-spacing: 3px;
 `
 export const Titleicon=styled.img`
-border:50%;
+border-radius:50%;
 width: 100px;
 height: 100px;
-margin-left: 500px;
+display: flex;
+justify-content: center;
+margin-top: 30px;
+`
+export const Titlewrapper=styled.div`
+width: 600px;
+height: 150px;
+display: flex;
+justify-content: center;
+margin-left: auto;
+margin-right: auto;
+
 
 
 `

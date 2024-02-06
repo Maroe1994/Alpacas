@@ -74,9 +74,9 @@ export function Ouroffer() {
        <Titleoffer>Cennik</Titleoffer>
         
         <Offergroup src="icongroup.jpg" text="Oferta grupowa" />
-        <Offergroup text="Oferta dla rodzin" />
-        <Offergroup text="Oferta dla szkół" />
-        <Offergroup text="Oferta indywidualna" />
+        <Offergroup src="familyicons.jpg" text="Oferta dla rodzin" />
+        <Offergroup src="student.png" text="Oferta dla szkół" />
+        
         <Fotter>
         <Contact>
           <Tel><img src="tel.png" alt="" width="40" height="40" margin-right="10"/>+48 531-610-730</Tel>
