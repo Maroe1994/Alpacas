@@ -30,16 +30,17 @@ export function Offergroup (props) {
         </Titlewrapper>
         <Tables>
     <Tr  >
-        <Th rowSpan={"5"}>Codziennie</Th>
+        <Th rowSpan={"6"}>Codziennie</Th>
         <Th>Rodzaj biletu</Th>
         <Th>Bilet 3h</Th>
         <Th>Bez limitu</Th>
         <Th>bhgrs</Th>
-        <Th>bhgrs</Th>
+        <Th >bhgjs</Th>
+        <Th >bhgjs</Th>
         
     </Tr>
     <Tr>
-        <Th>normalny</Th>
+        <Th >normalny</Th>
         <Th>bhgrs</Th>
         <Th>bhgrs</Th>
         <Th>bhgrs</Th>

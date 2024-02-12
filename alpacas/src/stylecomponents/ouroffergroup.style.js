@@ -8,16 +8,21 @@ margin-left: auto;
 margin-right: auto;
 margin-top: 50px;
 margin-bottom: 80px;
+border:1px solid orange;
 `
 export const Tr=styled.tr`
 width:100px;
 height:50px;
+border: 1px solid orange;
 
 :first-child{
     background-color: gray;
- 
+    border-top: 1px solid orange;
     width: 100px;
     height: 100px;
+}
+&:last-child{
+   
 }
 
 `
@@ -25,13 +30,13 @@ export const Th=styled.th`
 width:200px;
 height: 50px;
 border:1px solid orange;
-:first-child{
-    border-bottom: none;
-    border-top: none;
-    border-right: none;
+&:first-child{
+    border-top:1px solid orange;
+    
+    
 }
-:last-child{
-    border-bottom: 1px solid orange;
+&:last-child{
+    border-top: 1px solid orange;
 }
 
 
