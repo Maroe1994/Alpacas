@@ -23,8 +23,15 @@ export const Wrapperlogomenu = styled.div`
   top: 0;
   position: sticky;
   z-index: 100;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1400px) {
     height: 100px; // Dostosuj wysokość dla mniejszych ekranów
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  @media screen and (min-width: 400px){
+width: 100%;
+
   }
 `;
 export const Logo = styled.img`
@@ -61,8 +68,11 @@ export const Menu = styled.div`
   align-items: center;
 
   @media screen and (max-width: 768px) {
-    width: 80%; // Dostosuj szerokość dla mniejszych ekranów
+    width: 200px; // Dostosuj szerokość dla mniejszych ekranów
     flex-wrap: wrap; // Pozwól elementom zawijać się, gdy brakuje miejsca
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 `;
 export const Elementsul = styled.ul`
@@ -82,6 +92,8 @@ export const Elementsul = styled.ul`
   @media screen and (max-width: 768px) {
     width: 100%; // Dostosuj szerokość dla mniejszych ekranów
     margin-bottom: 10px; // Dodaj margines na dole dla lepszego rozdzielania elementów
+    width:auto;
+    height:auto;
   }
 
   &:hover {
@@ -135,7 +147,8 @@ export const Fotter = styled.div`
   
   @media screen and (max-width: 768px) {
     flex-direction: column; // Zmiana kierunku flexbox na kolumnowy dla mniejszych ekranów
-    height: auto; // Automatyczna wysokość dla lepszego dostosowania do zawartości
+    height: auto;// Automatyczna wysokość dla lepszego dostosowania do zawartości
+    width: 100vw;
   }
 `;
 
@@ -179,6 +192,9 @@ export const ImageBox = styled.div`
   @media screen and (max-width: 768px) {
     height: 70%; // Przykładowa zmiana wysokości dla mniejszych ekranów
     border-radius: 10px; // Przykładowa zmiana promienia dla mniejszych ekranów
+    justify-content: center;
+    align-items: center;
+    height: 400px;
   }
 `;
 export const SlideWrapper = styled.div`
@@ -191,16 +207,26 @@ export const SlideWrapper = styled.div`
 
   @media screen and (max-width: 768px) {
     width: 90vw; // Przykładowa zmiana szerokości dla mniejszych ekranów
+    
+    height: 400px;
+    margin-top: 10px;
+    
+    
+    
   }
 `;
 export const Images = styled.img`
   width: 70vw;
   height: 100vh;
   border-radius: 20px;
-  border: 3px solid greenyellow;
+ 
 
   @media screen and (max-width: 768px) {
     width: 90vw; // Przykładowa zmiana szerokości dla mniejszych ekranów
+    
+    display: flex;
+    align-items: center;
+    
   }
 `;
 
@@ -228,9 +254,12 @@ export const Findinput = styled.input`
   }
 
   @media screen and (max-width: 768px) {
-    width: 90vw; // Przykładowa zmiana szerokości dla mniejszych ekranów
+    width: 90px; // Przykładowa zmiana szerokości dla mniejszych ekranów
     position: absolute;
     top: 10px; // Przykładowa odległość od góry
+    height:10px;
+    margin-top: 35px;
+    margin-right: 20px;
   }
 `;
 export const Title = styled.div`
@@ -261,6 +290,12 @@ export const Contact = styled.div`
   @media screen and (max-width: 768px) {
     width: 90vw; // Przykładowa zmiana szerokości dla mniejszych ekranów
     /* Dodaj inne dostosowania stylu dla mniejszych ekranów */
+    margin-left:auto;
+    margin-right: auto;
+    height: 200px;
+    margin-top: 50px;
+    
+    
   }
 `;
 export const Media=styled.div`
@@ -269,6 +304,11 @@ height: 400px;
 @media screen and (max-width: 768px) {
     width: 90vw; // Przykładowa zmiana szerokości dla mniejszych ekranów
     /* Dodaj inne dostosowania stylu dla mniejszych ekranów */
+    height:200px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 50px;
+    
   }
 `
 export const Whatever = styled.div`
@@ -278,7 +318,9 @@ export const Whatever = styled.div`
   @media screen and (max-width: 768px) {
     width: 90vw; // Przykładowa zmiana szerokości dla mniejszych ekranów
     /* Dodaj inne dostosowania stylu dla mniejszych ekranów */
-    border:3px solid red;
+   margin-top: 50px;
+    margin-left:auto;
+    margin-right: auto;
     
   }
 
@@ -298,6 +340,10 @@ export const Boxinformation = styled.div`
   @media screen and (max-width: 768px) {
     flex-direction: column; // Przykładowa zmiana układu dla mniejszych ekranów
     /* Dodaj inne dostosowania stylu dla mniejszych ekranów */
+   
+    h1{
+      font-size: 12px;
+    }
   }
 `;
 export const Aboutus = styled.div`
@@ -311,6 +357,12 @@ export const Aboutus = styled.div`
     width: 100%; // Pełna szerokość na mniejszych ekranach
     margin-left: 0;
     margin-right: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    height: 300px;
+    
+    
     
   }
 `;
@@ -328,6 +380,10 @@ export const Photobox = styled.div`
   @media screen and (max-width: 768px) {
     width: 100%; // Pełna szerokość na mniejszych ekranach
     grid-template-columns: 1fr; // Jedna kolumna na mniejszych ekranach
+    row-gap: 2px;
+    column-gap: 5px;
+    margin-bottom: 20px;
+    
   }
 `;
 export const Tel = styled.div`
@@ -342,6 +398,9 @@ export const Tel = styled.div`
   @media screen and (max-width: 768px) {
     width: 100%; // Pełna szerokość na mniejszych ekranach
     margin-top: 20px; // Dostosuj margines na mniejszych ekranach
+    
+    display: flex;
+    justify-content: center;
   }
 `;
 export const Email = styled.div`
@@ -356,6 +415,8 @@ export const Email = styled.div`
   @media screen and (max-width: 768px) {
     width: 100%; // Pełna szerokość na mniejszych ekranach
     margin-top: 20px; // Dostosuj margines na mniejszych ekranach
+    display: flex;
+    justify-content: center;
   }
 `;
 export const Adress = styled.div`
@@ -372,6 +433,9 @@ export const Adress = styled.div`
     margin-top: 20px; // Dostosuj margines na mniejszych ekranach
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    justify-content: center;
+   
     
   }
 `;
@@ -388,6 +452,8 @@ export const Facebook = styled.div`
     width: 100%; // Pełna szerokość na mniejszych ekranach
     margin-top: 20px; // Dostosuj margines na mniejszych ekranach
     font-size: 16px; // Dostosuj rozmiar czcionki na mniejszych ekranach
+    display: flex;
+    justify-content: center;
   }
 
   :hover {
@@ -408,6 +474,8 @@ export const Instagram = styled.div`
     width: 100%; // Pełna szerokość na mniejszych ekranach
     margin-top: 20px; // Dostosuj margines na mniejszych ekranach
     font-size: 16px; // Dostosuj rozmiar czcionki na mniejszych ekranach
+    display: flex;
+    justify-content: center;
   }
 
   :hover {
@@ -428,6 +496,8 @@ export const Tictok = styled.div`
     width: 100%; // Pełna szerokość na mniejszych ekranach
     margin-top: 20px; // Dostosuj margines na mniejszych ekranach
     font-size: 16px; // Dostosuj rozmiar czcionki na mniejszych ekranach
+    display: flex;
+    justify-content: center;
   }
 
   :hover {
@@ -451,7 +521,7 @@ export const Politic = styled.div`
     width: 100%; // Pełna szerokość na mniejszych ekranach
     margin-top: 20px; // Dostosuj margines na mniejszych ekranach
     font-size: 16px; // Dostosuj rozmiar czcionki na mniejszych ekranach
-    border:2px solid black;
+    
     display: flex;
     justify-content: center;
   }
@@ -479,6 +549,8 @@ export const Histories = styled.div`
     width: 100%; // Pełna szerokość na mniejszych ekranach
     margin-top: 10px; // Dostosuj margines na mniejszych ekranach
     font-size: 14px; // Dostosuj rozmiar czcionki na mniejszych ekranach
+    display: flex;
+    justify-content: center;
   }
 
   :hover {
@@ -504,6 +576,8 @@ export const Rules = styled.div`
     width: 100%; // Pełna szerokość na mniejszych ekranach
     margin-top: 10px; // Dostosuj margines na mniejszych ekranach
     font-size: 14px; // Dostosuj rozmiar czcionki na mniejszych ekranach
+    display: flex;
+    justify-content: center;
   }
 
   :hover {
@@ -529,6 +603,8 @@ export const Copyright = styled.div`
     width: 100%; // Pełna szerokość na mniejszych ekranach
     margin-top: 10px; // Dostosuj margines na mniejszych ekranach
     font-size: 14px; // Dostosuj rozmiar czcionki na mniejszych ekranach
+    display: flex;
+    justify-content: center;
   }
 
   :hover {
@@ -548,6 +624,8 @@ export const Firstphoto = styled.img`
 
   @media screen and (max-width: 768px) {
     border-radius: 5px; // Dostosuj promień zaokrąglenia na mniejszych ekranach
+    width: 200px;
+    height: 200px;
   }
 `;
 export const Secondphoto = styled.img`
@@ -558,6 +636,9 @@ export const Secondphoto = styled.img`
 
   @media screen and (max-width: 768px) {
     border-radius: 5px; // Dostosuj promień zaokrąglenia na mniejszych ekranach
+    width: 100px;
+    height: auto;
+
   }
 `;
 export const Thirdphoto=styled.img`
@@ -567,6 +648,8 @@ align-self: stretch;
 border-radius: 10px;
 @media screen and (max-width: 768px) {
     border-radius: 5px; // Dostosuj promień zaokrąglenia na mniejszych ekranach
+    width: 60px;
+    height: auto;
   }
 `
 export const Fourthphoto=styled.img`
@@ -576,6 +659,7 @@ align-self: stretch;
 border-radius: 10px;
 @media screen and (max-width: 768px) {
     border-radius: 5px; // Dostosuj promień zaokrąglenia na mniejszych ekranach
+    width: 200px;
   }
 `
 export const Fivephoto=styled.img`
@@ -587,5 +671,7 @@ grid-row:2/3;
 grid-column: 2/4;
 @media screen and (max-width: 768px) {
     border-radius: 5px; // Dostosuj promień zaokrąglenia na mniejszych ekranach
+    width: 170px;
+    height: auto;
   }
 `

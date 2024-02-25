@@ -32,11 +32,11 @@ export function Offergroup (props) {
     <Tr  >
         <Th rowSpan={"6"}>Codziennie</Th>
         <Th>Rodzaj biletu</Th>
+        <Th>Bilet 1h</Th>
+        <Th>Bilet 2h</Th>
         <Th>Bilet 3h</Th>
-        <Th>Bez limitu</Th>
-        <Th>bhgrs</Th>
-        <Th >bhgjs</Th>
-        <Th >bhgjs</Th>
+        <Th >Bilet 4h</Th>
+        <Th >Bez limitu</Th>
         
     </Tr>
     <Tr>
@@ -49,7 +49,7 @@ export function Offergroup (props) {
         
     </Tr>
     <Tr>
-        <Th>ulgowy</Th>
+        <Th>uczniowski</Th>
         <Th>bhgrs</Th>
         <Th>bhgrs</Th>
         <Th>bhgrs</Th>
@@ -57,7 +57,7 @@ export function Offergroup (props) {
         <Th>bhgrs</Th>
     </Tr>
     <Tr>
-        <Th>bhgrs</Th>
+        <Th>studencki</Th>
         <Th>bhgrs</Th>
         <Th>bhgrs</Th>
         <Th>bhgrs</Th>
