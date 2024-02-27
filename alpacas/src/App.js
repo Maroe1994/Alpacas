@@ -7,6 +7,7 @@ import { Parrots } from "./components/parrots";
 import { Alpacas } from "./components/alpacas";
 import { Ouroffer } from "./components/ouroffers";
 import { Galeries } from "./components/galleries";
+import { Contactwithus } from "./components/contact";
 import './App.css';
 
 
@@ -23,6 +24,7 @@ function App() {
     <Route path="/Alpaki" element={<Alpacas/>}/>
     <Route path="/Nasza_oferta" element={<Ouroffer/>}/>
     <Route path="/Galeria" element={<Galeries/>}/>
+    <Route path="/Kontakt" element={<Contactwithus/>}/>
     </Routes>
     </BrowserRouter>
   );

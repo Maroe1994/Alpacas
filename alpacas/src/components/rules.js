@@ -33,6 +33,9 @@ export function Ruless (){
     const navigatetoGaleries= () => {
       navigate("/Galeria")
     }
+    const navigatetocontact= ( ) => {
+      navigate("/Kontakt")
+     }
   return(
  <> <Global/> <Wrapperlogomenu>
       <Logo onClick={navigatetoMain} src="myaplaca.png"></Logo>
@@ -61,11 +64,8 @@ export function Ruless (){
           <Elementsul onClick={navigatetoGaleries}>Galeria
          
           </Elementsul>
-          <Elementsul>Kontakt
-          <Wrapperli>
-          <Elementsli>coś tam</Elementsli>
-          <Elementsli>coś tam</Elementsli>
-          </Wrapperli>
+          <Elementsul onClick={navigatetocontact}>Kontakt
+          
           </Elementsul>
       </Menu><Socialmedia> <Findinput placeholder="Szukaj..."/></Socialmedia>
       </Wrapperlogomenu>

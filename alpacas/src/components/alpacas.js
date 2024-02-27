@@ -29,6 +29,9 @@ export function Alpacas() {
       const navigatetoOffer= () => {
         navigate("/Nasza_oferta")
       };
+      const navigatetocontact= ( ) => {
+        navigate("/Kontakt")
+       }
     return (
         <>
         <Global/><Wrapperlogomenu>
@@ -58,11 +61,8 @@ export function Alpacas() {
             <Elementsul onClick={navigatetoGaleries}>Galeria
             
             </Elementsul>
-            <Elementsul>Kontakt
-            <Wrapperli>
-            <Elementsli>coś tam</Elementsli>
-            <Elementsli>coś tam</Elementsli>
-            </Wrapperli>
+            <Elementsul onClick={navigatetocontact}>Kontakt
+            
             </Elementsul>
         </Menu><Socialmedia>
         <Findinput placeholder="Szukaj..."/>

@@ -48,6 +48,9 @@ const Thirdtitlephoto="animald.jpg"
       const navigatetoGaleries= () => {
         navigate("/Galeria")
       }
+      const navigatetocontact= ( ) => {
+        navigate("/Kontakt")
+       }
     return (
         <>
         <Global/><Wrapperlogomenu>
@@ -77,11 +80,8 @@ const Thirdtitlephoto="animald.jpg"
             <Elementsul onClick={navigatetoGaleries}>Galeria
             
             </Elementsul>
-            <Elementsul>Kontakt
-            <Wrapperli>
-            <Elementsli>coś tam</Elementsli>
-            <Elementsli>coś tam</Elementsli>
-            </Wrapperli>
+            <Elementsul onClick={navigatetocontact}>Kontakt
+            
             </Elementsul>
         </Menu><Socialmedia>
         <Findinput placeholder="Szukaj..."/>

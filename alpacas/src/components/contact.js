@@ -2,8 +2,8 @@ import { Global } from "../stylecomponents/history.style";
 import React from "react";
 import { Wrapperlogomenu,Menu,Findinput,Elementsul,Elementsli,Wrapperli,Socialmedia,Logo,Fotter,Contact,Email,Tel,Adress,Media,Facebook,Instagram,Tictok,Whatever,Politic,Histories,Rules,Copyright } from "../stylecomponents/mainsite.style";
 import { useNavigate } from "react-router-dom";
-import { Textbox } from "../stylecomponents/history.style";
-export function History (){
+import {  Wrappercontent, Titlecontact,Paragraphtitle,Informationcontent,Textinformation,Maincontent,Wrapperinput,Inputdate,Inputmessage,Titleinput } from "../stylecomponents/contact.style";
+export function Contactwithus (){
     const navigate = useNavigate();
     const navigateToHistory = () => {
         navigate("/Historia");
@@ -28,8 +28,8 @@ export function History (){
         navigate("/Galeria")
       }
       const navigatetocontact= ( ) => {
-        navigate("/Kontakt")
-       }
+       navigate("/Kontakt")
+      }
     return(
    <> <Global/> <Wrapperlogomenu>
         <Logo onClick={navigatetoMain} src="myaplaca.png"></Logo>
@@ -56,18 +56,52 @@ export function History (){
             </Wrapperli>
             </Elementsul>
             <Elementsul onClick={navigatetoGaleries}>Galeria
-            
             </Elementsul>
-            <Elementsul onClick={navigatetocontact}>Kontakt
-            
-            </Elementsul>
+            <Elementsul onClick={navigatetocontact}>Kontakt</Elementsul>
         </Menu><Socialmedia> <Findinput placeholder="Szukaj..."/></Socialmedia>
         </Wrapperlogomenu>
-        <Textbox>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-          totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?
-[33] At vero 
-eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</Textbox>
-<Fotter>
+        <Wrappercontent>
+        <Titlecontact>Kontakt z Zagroda Alpaki w Gdyni</Titlecontact>
+        <Paragraphtitle> Zapraszamy do kontaktu z naszym Pomorskim Wojewódzkim Związkiem Piłki Siatkowej telefoniczne, mailowo oraz poprzez formularz kontaktowy zamieszony na stronie. Chętnie odpowiemy na wszystkie zadawane pytania. </Paragraphtitle>
+        <Maincontent>
+        <Informationcontent>
+        <Textinformation><p>ul. Witosławy 12 </p>
+        <p>81-601 Gdynia</p>
+        </Textinformation>
+        <Textinformation>
+          <span>Nr NIP</span> 957-08-24-659
+        </Textinformation>
+        <Textinformation>
+          <p><span>Nr konta</span></p>
+          <p>55 1750 0012 0000 0000 3735 1679</p>
+          <p>RAIFFEISEN BANK POLSKA SA</p>
+          </Textinformation>
+          <Textinformation>
+            <p><span>Telefon:</span></p>
+            <p>503 960 316-właściciel</p>
+            <p>502 63 63 56-Sekretariat</p>
+          </Textinformation>
+          <Textinformation>
+            <p><span>email:</span></p>
+            <p>marekroginsski1994@gmail.com</p>
+            <p>alpakigdynia@sekretariat.pl</p>
+          </Textinformation>
+          <Textinformation>
+            <p><span>Godziny otwarcia:</span></p>
+            <p>Poniedziałek-sobota: 9-18</p>
+          </Textinformation>
+        </Informationcontent>
+        <Wrapperinput>
+       <Titleinput>Imię:<Inputdate type="text"/> </Titleinput>
+       <Titleinput>Nazwisko:<Inputdate type="text"/> </Titleinput>
+       <Titleinput>Firma:<Inputdate type="text"/> </Titleinput>
+       <Titleinput>Telefon:<Inputdate type="number"/> </Titleinput>
+       <Titleinput>email:<Inputdate type="email"/> </Titleinput>
+        </Wrapperinput>
+       <Inputmessage/>
+        </Maincontent>
+        </Wrappercontent>
+        <Fotter>
           <Contact>
             <Tel><img src="tel.png" alt="" width="40" height="40" margin-right="10"/>+48 531-610-730</Tel>
             <Email><img src="email.png" alt="" width="40" height="40" />marekroginski1994@gmail.com</Email>
@@ -79,7 +113,7 @@ eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium v
          <Tictok> <img src="ticktok.png" alt="" width="40" height="40"/>Ticktock</Tictok>
         </Media>
 <Whatever>
- <a href="/Polityka_prywatności" target="blank" > <Politic  onClick={navigatetoPolitic}>Polityka prywatności</Politic></a>
+<a href="/Polityka_prywatności" target="blank" > <Politic  onClick={navigatetoPolitic}>Polityka prywatności</Politic></a>
  <a href="/Historia" target="blank"> <Histories onClick={navigateToHistory}>Historia</Histories></a>
  <a href="/Regulamin" target="blank"> <Rules onClick={navigatetoRules}>Regulamin</Rules></a>
   <Copyright>Copyright © 2023 Marek Rogiński</Copyright>
