@@ -326,16 +326,42 @@ height: 35px;
 margin-top: 10px;
 margin-bottom:10px;
 margin-left: auto;
+font-size:20px;
 
 `
 export const Inputmessage=styled.input`
 width: 400px;
-height: 400px;
-margin-top: 30px;
-text-align:top;
-
+  height: 300px;
+  margin-top: 30px;
+  text-align: left; /* Rozpocznij pisanie od lewego górnego rogu */
+  align-items: flex-start; /* Umieść tekst w lewym górnym rogu */
 `
 export const Titleinput=styled.label`
 width: auto;
 height: auto;
+display: flex;
+
+`
+export const Messagecheckbox=styled.input`
+width:10px;
+height: 10px;
+display: flex;
+align-self: flex-end;
+border: 3px solid red;
+`
+export const Sendquestion=styled.button`
+width: 300px;
+height: 50px;
+background-color: darkblue;
+margin-top: 30px;
+color:white;
+font-weight: 600;
+text-transform: uppercase;
+font-size: 20;
+margin-left: 900px;
+border: 1px solid darkblue;
+:hover{
+    background-color: blue;
+    cursor: pointer;
+}
 `

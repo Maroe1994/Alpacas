@@ -68,7 +68,7 @@ export function Ouroffer() {
            
             </Elementsul>
         </Menu><Socialmedia>
-        <Findinput placeholder="Szukaj..."/>
+        <Findinput placeholder="Szukaj"/>
         </Socialmedia>
         </Wrapperlogomenu>
        <Titleoffer>Cennik</Titleoffer>

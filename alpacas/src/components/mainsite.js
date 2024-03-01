@@ -71,7 +71,7 @@ export function Mainsite () {
             
             </Elementsul>
         </Menu><Socialmedia>
-        <Findinput placeholder="Szukaj..."/>
+        <Findinput placeholder="Szukaj"/>
         </Socialmedia>
         </Wrapperlogomenu>
         <Title>My Alpaca</Title>

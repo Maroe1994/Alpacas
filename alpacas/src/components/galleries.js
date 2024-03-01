@@ -84,7 +84,7 @@ const Thirdtitlephoto="animald.jpg"
             
             </Elementsul>
         </Menu><Socialmedia>
-        <Findinput placeholder="Szukaj..."/>
+        <Findinput placeholder="Szukaj"/>
         </Socialmedia>
         </Wrapperlogomenu>
         <Titlegalleries>Nasza Galeria:</Titlegalleries>

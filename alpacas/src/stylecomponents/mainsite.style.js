@@ -23,16 +23,22 @@ export const Wrapperlogomenu = styled.div`
   top: 0;
   position: sticky;
   z-index: 100;
+  align-items: center;
  
   
-  @media screen and (min-width: 280px){
+  @media screen and (max-width: 435px){
 width: 100%;
 overflow-x:hidden;
+height: auto;
+flex-direction: column;
+
+
 
   }
   @media screen and (max-width: 1380px){
 width: 100%;
 overflow-x:hidden;
+height: auto;
 
   }
 `;
@@ -40,16 +46,21 @@ export const Logo = styled.img`
   background-image: url("myaplaca.png");
   width: 230px;
   height: 120px;
-  margin-top: 10px;
+  
   cursor: pointer;
   padding: 0;
-
-  @media screen and (max-width: 1380px) {
-    width: 80px; // Dostosuj szerokość dla mniejszych ekranów
-    height: 80px; // Dostosuj wysokość dla mniejszych ekranów
-    display: flex;
+  display: flex;
     align-items: center;
     justify-content: center;
+
+  @media screen and (max-width: 580px) {
+    width: 100px; // Dostosuj szerokość dla mniejszych ekranów
+    height: 100px; // Dostosuj wysokość dla mniejszych ekranów
+   
+   display: flex;
+    align-items: center;
+    justify-content: center;
+
   }
 `;
 export const Socialmedia = styled.div`
@@ -71,20 +82,25 @@ export const Menu = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  
 
-  @media screen and (max-width: 1380) {
-    width: 200px; // Dostosuj szerokość dla mniejszych ekranów
-    flex-wrap: wrap; // Pozwól elementom zawijać się, gdy brakuje miejsca
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  @media screen and (max-width: 431px) {
+    width: auto; // Dostosuj szerokość dla mniejszych ekranów
+    flex-direction: column;
+    height: auto;
+    
   }
-  @media screen and (min-width: 280) {
-    width: 100%; // Dostosuj szerokość dla mniejszych ekranów
-    flex-wrap: wrap; // Pozwól elementom zawijać się, gdy brakuje miejsca
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+
+  @media screen and (min-width: 431px) and (max-width: 1380px) {
+    width: auto; // Dostosuj szerokość dla mniejszych ekranów
+     /* Poziome menu dla bardzo małych i średnich ekranów */
+    flex-wrap: wrap; /* Pozwól elementom zawijać się, gdy brakuje miejsca */
+    justify-content: center; /* Wyśrodkuj elementy w poziomie */
+    height: auto;
+  }
+
+  @media screen and (min-width: 1381px) {
+    flex-direction: row; /* Poziome menu dla większych ekranów */
   }
 `;
 export const Elementsul = styled.ul`
@@ -101,10 +117,10 @@ export const Elementsul = styled.ul`
   cursor: pointer;
   font-weight: 700;
 
-  @media screen and (max-width: 768px) {
-    width: 100%; // Dostosuj szerokość dla mniejszych ekranów
-    margin-bottom: 10px; // Dodaj margines na dole dla lepszego rozdzielania elementów
-    width:auto;
+  @media screen and (max-width: 435px) {
+     // Dostosuj szerokość dla mniejszych ekranów
+    margin-bottom: 5px; // Dodaj margines na dole dla lepszego rozdzielania elementów
+    width:100px;
     height:auto;
   }
 
@@ -252,6 +268,9 @@ export const Findinput = styled.input`
   border-radius: 10px;
   font-size: 20px;
   font-family: "Krub", sans-serif;
+  display: flex;
+    align-items: center;
+    justify-content: center;
 
   ::placeholder {
     color: blueviolet;
@@ -265,14 +284,16 @@ export const Findinput = styled.input`
     font-weight: 700;
   }
 
-  @media screen and (max-width: 768px) {
-    width: 90px; // Przykładowa zmiana szerokości dla mniejszych ekranów
+  @media screen and (max-width: 1024px) {
+    width: 70px; // Przykładowa zmiana szerokości dla mniejszych ekranów
     position: absolute;
-    top: 10px; // Przykładowa odległość od góry
-    height:10px;
-    margin-top: 35px;
-    margin-right: 20px;
-    display: none;
+   font-size: 15px;
+    height:20px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
   }
 `;
 export const Title = styled.div`

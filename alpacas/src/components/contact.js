@@ -2,7 +2,7 @@ import { Global } from "../stylecomponents/history.style";
 import React from "react";
 import { Wrapperlogomenu,Menu,Findinput,Elementsul,Elementsli,Wrapperli,Socialmedia,Logo,Fotter,Contact,Email,Tel,Adress,Media,Facebook,Instagram,Tictok,Whatever,Politic,Histories,Rules,Copyright } from "../stylecomponents/mainsite.style";
 import { useNavigate } from "react-router-dom";
-import {  Wrappercontent, Titlecontact,Paragraphtitle,Informationcontent,Textinformation,Maincontent,Wrapperinput,Inputdate,Inputmessage,Titleinput } from "../stylecomponents/contact.style";
+import {  Wrappercontent, Titlecontact,Paragraphtitle,Informationcontent,Textinformation,Maincontent,Wrapperinput,Inputdate,Inputmessage,Titleinput,Messagecheckbox,Sendquestion } from "../stylecomponents/contact.style";
 export function Contactwithus (){
     const navigate = useNavigate();
     const navigateToHistory = () => {
@@ -58,7 +58,7 @@ export function Contactwithus (){
             <Elementsul onClick={navigatetoGaleries}>Galeria
             </Elementsul>
             <Elementsul onClick={navigatetocontact}>Kontakt</Elementsul>
-        </Menu><Socialmedia> <Findinput placeholder="Szukaj..."/></Socialmedia>
+        </Menu><Socialmedia> <Findinput placeholder="Szukaj"/></Socialmedia>
         </Wrapperlogomenu>
         <Wrappercontent>
         <Titlecontact>Kontakt z Zagroda Alpaki w Gdyni</Titlecontact>
@@ -99,7 +99,11 @@ export function Contactwithus (){
        <Titleinput>email:<Inputdate type="email"/> </Titleinput>
         </Wrapperinput>
        <Inputmessage/>
+       
         </Maincontent>
+        <Titleinput><Messagecheckbox type="checkbox"/>Zapoznałem się z Polityką prywatności serwisu www.pwzps.pl oraz wyrażam zgodę na przetwarzanie przez POMORSKI WOJEWÓDZKI ZWIĄZEK PIŁKI SIATKOWEJ, al. Zwycięstwa 51, 80-213 Gdańsk, udostępnionych przeze mnie danych osobowych na zasadach opisanych w Polityce prywatności dostępnej w Serwisie. Oświadczam, że są mi znane cele przetwarzania danych oraz moje uprawnienia. Niniejsza zgoda może być wycofana w dowolnym czasie poprzez kontakt z Administratorem pod adresem pwzps.gdansk@interia.pl, bez wpływu na zgodność z prawem przetwarzania, którego dokonano na podstawie zgody przed jej cofnięciem.
+Więcej informacji dotyczących przetwarzania danych osobowych - Obowiązek Informacyjny</Titleinput>
+<Sendquestion>WYŚLIJ ZAPYTANIE</Sendquestion>
         </Wrappercontent>
         <Fotter>
           <Contact>

@@ -67,7 +67,7 @@ export function Politics() {
             
             </Elementsul>
         </Menu><Socialmedia>
-        <Findinput placeholder="Szukaj..."/>
+        <Findinput placeholder="Szukaj"/>
         </Socialmedia>
         </Wrapperlogomenu>
         <Titlepolitic><h3>Polityka prywatności</h3></Titlepolitic>

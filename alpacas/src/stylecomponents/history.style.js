@@ -13,14 +13,14 @@ export const Textbox = styled.div`
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 50px;
   font-weight: bold;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1380px) {
     width: 90%; // Zmniejsz szerokość dla mniejszych ekranów
     margin-top: 20px; // Dostosuj margines na mniejszych ekranach
-    font-size: 16px; // Zmniejsz rozmiar czcionki dla mniejszych ekranów
+    font-size: 12px; // Zmniejsz rozmiar czcionki dla mniejszych ekranów
     overflow-x: hidden; // Wyłącz poziome przewijanie
   }
 `;

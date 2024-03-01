@@ -67,7 +67,7 @@ export function Ruless (){
           <Elementsul onClick={navigatetocontact}>Kontakt
           
           </Elementsul>
-      </Menu><Socialmedia> <Findinput placeholder="Szukaj..."/></Socialmedia>
+      </Menu><Socialmedia> <Findinput placeholder="Szukaj"/></Socialmedia>
       </Wrapperlogomenu>
       
    <Fotter>

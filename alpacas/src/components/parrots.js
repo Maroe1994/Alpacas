@@ -65,7 +65,7 @@ export function Parrots() {
             
             </Elementsul>
         </Menu><Socialmedia>
-        <Findinput placeholder="Szukaj..."/>
+        <Findinput placeholder="Szukaj"/>
         </Socialmedia>
         </Wrapperlogomenu>
         Papugi
