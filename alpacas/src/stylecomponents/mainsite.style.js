@@ -117,11 +117,13 @@ export const Elementsul = styled.ul`
   cursor: pointer;
   font-weight: 700;
 
-  @media screen and (max-width: 435px) {
+  @media screen and (max-width: 540px) {
      // Dostosuj szerokość dla mniejszych ekranów
     margin-bottom: 5px; // Dodaj margines na dole dla lepszego rozdzielania elementów
-    width:100px;
-    height:auto;
+    width:200px;
+    height:20px;
+    font-size: 15px;
+    line-height: 20px;
   }
 
   &:hover {

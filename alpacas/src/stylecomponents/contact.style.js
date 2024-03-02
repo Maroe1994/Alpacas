@@ -15,15 +15,11 @@ margin-bottom: 50px;
 
 height: auto;
 margin-top: 50px;
-@media screen and (max-width: 1380px){
-margin-left: auto;
-margin-right:auto;
-height:auto;
-}
-@media screen and (min-width: 280px){
-margin-left: auto;
-margin-right:auto;
-height:auto;
+
+@media screen and (max-width: 540px) {
+display: flex;
+flex-direction: column;
+overflow-x: hidden;
 }
 `
 export const Titlecontact=styled.text`
@@ -287,9 +283,13 @@ margin-top: 30px;
 export const Maincontent=styled.div`
 width: auto;
 height: auto;
-
+margin-top:20px;
 display:flex;
 justify-content:space-between;
+@media screen and (max-width: 540px) {
+display: flex;
+flex-direction: column;
+}
 `
 export const Informationcontent=styled.div`
 width:300px;
@@ -319,6 +319,7 @@ height:400px;
 margin-top: 30px;
 display: flex;
 flex-direction: column;
+
 `
 export const Inputdate=styled.input`
 width: 200px;
@@ -332,22 +333,42 @@ font-size:20px;
 export const Inputmessage=styled.input`
 width: 400px;
   height: 300px;
-  margin-top: 30px;
-  text-align: left; /* Rozpocznij pisanie od lewego górnego rogu */
-  align-items: flex-start; /* Umieść tekst w lewym górnym rogu */
+  margin-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start; /* Rozpocznij pisanie od lewego górnego rogu */
+   /* Umieść tekst w lewym górnym rogu */
+  @media screen and (max-width: 540px) {
+        width: auto;
+        height: 400px;
+        overflow-x: hidden;
+        margin-top:10px;
+        margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px)and  (max-width:1380px) {
+        width:80px;
+        height:300px;
+        margin-top: 35px;
+  }
 `
 export const Titleinput=styled.label`
 width: auto;
 height: auto;
 display: flex;
+font-size: 15px;
+margin-bottom: 20px;
+
 
 `
 export const Messagecheckbox=styled.input`
-width:10px;
-height: 10px;
+width:30px;
+height: 30px;
 display: flex;
-align-self: flex-end;
-border: 3px solid red;
+align-self: flex-start;
+
+margin-bottom: 70px;
+font-size: 15px;
+
 `
 export const Sendquestion=styled.button`
 width: 300px;
@@ -358,10 +379,29 @@ color:white;
 font-weight: 600;
 text-transform: uppercase;
 font-size: 20;
-margin-left: 900px;
+margin-left: 800px;
 border: 1px solid darkblue;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
 :hover{
     background-color: blue;
     cursor: pointer;
+}
+@media screen and (max-width: 540px) {
+display: flex;
+flex-direction: column;
+margin-left: auto;
+margin-right: auto;
+justify-content: center;
+align-items: center;
+
+
+}
+@media screen and (min-width: 768px)and  (max-width:1024px) {
+        margin-left: auto;
+        margin-right: auto;
 }
 `
