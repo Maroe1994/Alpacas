@@ -304,6 +304,7 @@ width: auto;
 height:auto;
 margin-top: 15px;
 margin-bottom: 15px;
+
 p{
     margin:0;
 }
@@ -324,7 +325,7 @@ flex-direction: column;
 export const Inputdate=styled.input`
 width: 200px;
 height: 35px;
-margin-top: 10px;
+
 margin-bottom:10px;
 margin-left: auto;
 font-size:20px;
@@ -332,23 +333,24 @@ font-size:20px;
 `
 export const Inputmessage=styled.input`
 width: 400px;
-  height: 300px;
+  height: 315px;
   margin-left: 10px;
   display: flex;
+  
   justify-content: flex-start;
   align-items: flex-start; /* Rozpocznij pisanie od lewego górnego rogu */
    /* Umieść tekst w lewym górnym rogu */
   @media screen and (max-width: 540px) {
-        width: auto;
-        height: 400px;
+        width: 200px;
+        height: 300px;
         overflow-x: hidden;
-        margin-top:10px;
+        margin-left: 10px;
         margin-bottom: 30px;
   }
   @media screen and (min-width: 768px)and  (max-width:1380px) {
         width:80px;
-        height:300px;
-        margin-top: 35px;
+        height:320px;
+        
   }
 `
 export const Titleinput=styled.label`
@@ -357,17 +359,20 @@ height: auto;
 display: flex;
 font-size: 15px;
 margin-bottom: 20px;
+padding-left: 0;
+
+
 
 
 `
 export const Messagecheckbox=styled.input`
-width:30px;
-height: 30px;
+width:15px;
+height: 15px;
 display: flex;
 align-self: flex-start;
+margin-left:0;
 
-margin-bottom: 70px;
-font-size: 15px;
+
 
 `
 export const Sendquestion=styled.button`
@@ -397,7 +402,7 @@ margin-left: auto;
 margin-right: auto;
 justify-content: center;
 align-items: center;
-
+width: auto;
 
 }
 @media screen and (min-width: 768px)and  (max-width:1024px) {

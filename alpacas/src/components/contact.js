@@ -98,7 +98,7 @@ export function Contactwithus (){
        <Titleinput>Telefon:<Inputdate type="number"/> </Titleinput>
        <Titleinput>email:<Inputdate type="email"/> </Titleinput>
         </Wrapperinput>
-       <Titleinput>Wiadomość:<Inputmessage type="message"/></Titleinput>
+       <Titleinput style={{ marginTop: '30px' }}>Wiadomość:<Inputmessage type="message"/></Titleinput>
        
         </Maincontent>
         <Titleinput><Messagecheckbox type="checkbox"/>Zapoznałem się z Polityką prywatności serwisu www.pwzps.pl oraz wyrażam zgodę na przetwarzanie przez POMORSKI WOJEWÓDZKI ZWIĄZEK PIŁKI SIATKOWEJ, al. Zwycięstwa 51, 80-213 Gdańsk, udostępnionych przeze mnie danych osobowych na zasadach opisanych w Polityce prywatności dostępnej w Serwisie. Oświadczam, że są mi znane cele przetwarzania danych oraz moje uprawnienia. Niniejsza zgoda może być wycofana w dowolnym czasie poprzez kontakt z Administratorem pod adresem pwzps.gdansk@interia.pl, bez wpływu na zgodność z prawem przetwarzania, którego dokonano na podstawie zgody przed jej cofnięciem.

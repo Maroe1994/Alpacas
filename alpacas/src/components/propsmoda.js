@@ -29,6 +29,12 @@ const ModalContent = styled.div`
   margin-left: auto;
   margin-right:auto;
   margin-top: 150px;
+  @media screen and (max-width:1024px) {
+    width: 250px;
+    height: 300x;
+    
+    
+  }
 `;
 
 const CloseButton = styled.button`
@@ -41,6 +47,12 @@ const CloseButton = styled.button`
 const Image = styled.img`
   width: 100%;
   max-height: 50vh;
+  @media screen and (max-width:1024px) {
+    width: 250px;
+    height: 300x;
+    margin-left: auto;
+    margin-right: auto;
+    }
 `;
 
 const NextButton = styled.button`
@@ -78,6 +90,7 @@ cursor: pointer;
   }
 z-index: 1;
 filter:saturate(40%)
+
 `
 
 

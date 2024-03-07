@@ -297,6 +297,9 @@ export const Findinput = styled.input`
     justify-content: center;
     
   }
+  @media screen and (min-width: 540px){
+    margin-right: 20px;
+  }
 `;
 export const Title = styled.div`
   margin-left: auto;

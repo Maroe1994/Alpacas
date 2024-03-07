@@ -2,13 +2,32 @@ import { Global,Boxinformation,Aboutus,Tel,Email,Adress,Facebook,Instagram,Ticto
   Menu,Elementsul,Elementsli,Wrapperli,Logo,Wrapperlogomenu,Socialmedia,Fotter,SlideWrapper,ImageBox,Findinput,Title,Contact,Media,Whatever,Photobox} from "../stylecomponents/mainsite.style";
 import {  useNavigate } from "react-router-dom";
 import React from "react";
-
+import { useState } from "react";
 
 import { Slider } from "./slider";
 
-
+const Component1 = () => <div>Component 1</div>;
+const Component2 = () => <div>Component 2</div>;
+const Component3 = () => <div>Component 3</div>;
 
 export function Mainsite () {
+
+  const [filter, setFilter] = useState('');
+
+  const handleFilterChange = (event) => {
+    setFilter(event.target.value);
+  };
+
+  // Tablica zawierająca wszystkie komponenty
+  const allComponents = [Component1, Component2, Component3];
+
+  // Komponenty filtrowane na podstawie wprowadzonego filtru
+  const filteredComponents = allComponents.filter(
+    (Component) =>
+      Component.name.toLowerCase().includes(filter.toLowerCase()) // Sprawdź, czy nazwa komponentu zawiera wprowadzony filtr (ignoruj wielkość liter)
+  );
+
+  
     const navigate = useNavigate();
     const navigateToHistory = () => {
         navigate("/Historia");
@@ -38,6 +57,7 @@ export function Mainsite () {
       const navigatetocontact= ( ) => {
         navigate("/Kontakt")
        }
+       
     return(
         <>
         <Global/><Wrapperlogomenu>
@@ -71,7 +91,14 @@ export function Mainsite () {
             
             </Elementsul>
         </Menu><Socialmedia>
-        <Findinput placeholder="Szukaj"/>
+        <Findinput placeholder="Szukaj" type="text"
+        value={filter}
+        onChange={handleFilterChange} />
+        <div>
+        {filteredComponents.map((Component, index) => (
+          <Component key={index} />
+        ))}
+      </div>
         </Socialmedia>
         </Wrapperlogomenu>
         <Title>My Alpaca</Title>

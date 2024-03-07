@@ -2,7 +2,7 @@ import { Global } from "../stylecomponents/history.style";
 import React from "react";
 import { Wrapperlogomenu,Logo,Menu,Elementsul,Elementsli,Wrapperli,Socialmedia,Findinput,Fotter,Contact,Email,Tel,Adress,Media,Facebook,Instagram,Tictok,Whatever,Politic,Histories,Rules,Copyright } from "../stylecomponents/mainsite.style";
 import { useNavigate } from "react-router-dom";
-
+import { ImageWithText,Imagess,Textss } from "../stylecomponents/alpacas.style";
 export function Alpacas() {
     const navigate = useNavigate();
     const navigateToHistory = () => {
@@ -68,7 +68,10 @@ export function Alpacas() {
         <Findinput placeholder="Szukaj"/>
         </Socialmedia>
         </Wrapperlogomenu>
-        Alpaki
+        <ImageWithText>
+  <Imagess src="alpacastitle.jpg" alt="Obrazek" />
+  <Textss>Alpaki</Textss>
+</ImageWithText>
         <Fotter>
         <Contact>
           <Tel><img src="tel.png" alt="" width="40" height="40" margin-right="10"/>+48 531-610-730</Tel>
