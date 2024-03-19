@@ -3,7 +3,7 @@ import React from "react";
 import { Wrapperlogomenu,Logo,Menu,Elementsul,Elementsli,Wrapperli,Socialmedia,Findinput,Fotter,Contact,Email,Tel,Adress,Media,Facebook,Instagram,Tictok,Whatever,Politic,Histories,Rules,Copyright } from "../stylecomponents/mainsite.style";
 import { useNavigate } from "react-router-dom";
 import { Offergroup } from "./ouroffergroup";
-import { Titleoffer } from "../stylecomponents/ouroffergroup.style";
+import { Titleoffer, Boxinformationoffer } from "../stylecomponents/ouroffergroup.style";
 
 export function Ouroffer() {
     const navigate = useNavigate();
@@ -72,12 +72,11 @@ export function Ouroffer() {
         </Socialmedia>
         </Wrapperlogomenu>
        <Titleoffer>Cennik</Titleoffer>
-        
-        <Offergroup src="icongroup.jpg" text="Oferta grupowa" />
-        <Offergroup src="familyicons.jpg" text="Oferta dla rodzin" />
-        <Offergroup src="student.png" text="Oferta dla szkół" />
-        
-        <Fotter>
+        <Offergroup src="icongroup.jpg" text="Oferta indywidualna" />
+        <Boxinformationoffer><span>Zniżka studencka</span>-po okazaniu ważnej legitymacji studenckiej 51% zniżki od biletu normalnego</Boxinformationoffer>
+        <Boxinformationoffer><span>Zniżka uczniowska</span>-po okazaniu ważnej legitymacji studenckiej 37% zniżki od biletu normalnego</Boxinformationoffer>
+        <Boxinformationoffer><span>Zniżka dla Emerytów i Rencistów</span>-po okazaniu ważnego dokumentu 70% zniżki od biletu normalnego, natomiast seniorzy od 70 roku życia wchodzą za darmo</Boxinformationoffer>
+      <Fotter>
         <Contact>
           <Tel><img src="tel.png" alt="" width="40" height="40" margin-right="10"/>+48 531-610-730</Tel>
           <Email><img src="email.png" alt="" width="40" height="40" />marekroginski1994@gmail.com</Email>

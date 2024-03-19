@@ -41,36 +41,36 @@ export function Offergroup (props) {
     </Tr>
     <Tr>
         <Th >normalny</Th>
-        <Th>bhgrs</Th>
-        <Th>bhgrs</Th>
-        <Th>bhgrs</Th>
-        <Th>bhgrs</Th>
-        <Th>bhgrs</Th>
+        <Th>15zł</Th>
+        <Th>25zł</Th>
+        <Th>35zł</Th>
+        <Th>40zł</Th>
+        <Th>50zł</Th>
         
     </Tr>
     <Tr>
         <Th>uczniowski</Th>
-        <Th>bhgrs</Th>
-        <Th>bhgrs</Th>
-        <Th>bhgrs</Th>
-        <Th>bhgrs</Th>
-        <Th>bhgrs</Th>
+        <Th>10zł</Th>
+        <Th>15zł</Th>
+        <Th>20zł</Th>
+        <Th>25zł</Th>
+        <Th>30zł</Th>
     </Tr>
     <Tr>
         <Th>studencki</Th>
-        <Th>bhgrs</Th>
-        <Th>bhgrs</Th>
-        <Th>bhgrs</Th>
-        <Th>bhgrs</Th>
-        <Th>bhgrs</Th>
+        <Th>12zł</Th>
+        <Th>18zł</Th>
+        <Th>24zł</Th>
+        <Th>32zł</Th>
+        <Th>40zł</Th>
     </Tr>
     <Tr>
-        <Th>bhgrs</Th>
-        <Th>bhgrs</Th>
-        <Th>bhgrs</Th>
-        <Th>bhgrs</Th>
-        <Th>bhgrs</Th>
-        <Th>bhgrs</Th>
+        <Th>Dla Emerytów i Rencistów</Th>
+        <Th>5zł</Th>
+        <Th>10zł</Th>
+        <Th>15zł</Th>
+        <Th>20zł</Th>
+        <Th>25zł</Th>
         
     </Tr>
         </Tables>

@@ -2,30 +2,41 @@ import { Global,Boxinformation,Aboutus,Tel,Email,Adress,Facebook,Instagram,Ticto
   Menu,Elementsul,Elementsli,Wrapperli,Logo,Wrapperlogomenu,Socialmedia,Fotter,SlideWrapper,ImageBox,Findinput,Title,Contact,Media,Whatever,Photobox} from "../stylecomponents/mainsite.style";
 import {  useNavigate } from "react-router-dom";
 import React from "react";
-import { useState } from "react";
+
 
 import { Slider } from "./slider";
 
-const Component1 = () => <div>Component 1</div>;
-const Component2 = () => <div>Component 2</div>;
-const Component3 = () => <div>Component 3</div>;
+
 
 export function Mainsite () {
 
-  const [filter, setFilter] = useState('');
+  document.addEventListener('DOMContentLoaded', function() {
+    var findInput = document.getElementById('findInput');
+    var searchResults = document.getElementById('searchResults');
 
-  const handleFilterChange = (event) => {
-    setFilter(event.target.value);
-  };
+    findInput.addEventListener('input', function() {
+        var searchQuery = this.value.toLowerCase();
+        searchResults.innerHTML = '';
 
-  // Tablica zawierająca wszystkie komponenty
-  const allComponents = [Component1, Component2, Component3];
+        var allTextElements = document.querySelectorAll('h1, h2, h3, p, li, a');
 
-  // Komponenty filtrowane na podstawie wprowadzonego filtru
-  const filteredComponents = allComponents.filter(
-    (Component) =>
-      Component.name.toLowerCase().includes(filter.toLowerCase()) // Sprawdź, czy nazwa komponentu zawiera wprowadzony filtr (ignoruj wielkość liter)
-  );
+        var foundResults = false;
+
+        allTextElements.forEach(function(element) {
+            var elementText = element.textContent.toLowerCase();
+            if (elementText.includes(searchQuery)) {
+                foundResults = true;
+                var resultItem = document.createElement('div');
+                resultItem.textContent = elementText;
+                searchResults.appendChild(resultItem);
+            }
+        });
+
+        if (!foundResults) {
+            alert('Nie znaleziono frazy: ' + searchQuery);
+        }
+    });
+});
 
   
     const navigate = useNavigate();
@@ -91,14 +102,10 @@ export function Mainsite () {
             
             </Elementsul>
         </Menu><Socialmedia>
-        <Findinput placeholder="Szukaj" type="text"
-        value={filter}
-        onChange={handleFilterChange} />
-        <div>
-        {filteredComponents.map((Component, index) => (
-          <Component key={index} />
-        ))}
-      </div>
+        <Findinput placeholder="Szukaj" type="text" id="findInput"
+        />
+        
+
         </Socialmedia>
         </Wrapperlogomenu>
         <Title>My Alpaca</Title>
@@ -136,7 +143,7 @@ export function Mainsite () {
          <Tictok> <img src="ticktok.png" alt="" width="40" height="40"/>Ticktock</Tictok>
         </Media>
 <Whatever>
-<a href="/Polityka_prywatności" target="blank" > <Politic  onClick={navigatetoPolitic}>Polityka prywatności</Politic></a>
+<a href="/Polityka_prywatności" target="blank"> <Politic  onClick={navigatetoPolitic}>Polityka prywatności</Politic></a>
  <a href="/Historia" target="blank"> <Histories onClick={navigateToHistory}>Historia</Histories></a>
  <a href="/Regulamin" target="blank"> <Rules onClick={navigatetoRules}>Regulamin</Rules></a>
   <Copyright>Copyright © 2023 Marek Rogiński</Copyright>
