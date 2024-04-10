@@ -15,7 +15,7 @@ export const Global = createGlobalStyle`
 
 export const Wrapperlogomenu = styled.div`
   width: 100%;
-  height: 150px;
+  height: 100px;
   background-color: #048500;
   justify-content: space-between;
   display: flex;
@@ -26,11 +26,13 @@ export const Wrapperlogomenu = styled.div`
   align-items: center;
  
   
-  @media screen and (max-width: 435px){
+  @media screen and (max-width: 768px){
 width: 100%;
 overflow-x:hidden;
-height: auto;
-flex-direction: column;
+height: 100px;
+
+align-items: center;
+justify-content:space-between;
 
 
 
@@ -55,12 +57,10 @@ export const Logo = styled.img`
 
   @media screen and (max-width: 580px) {
     width: 100px; // Dostosuj szerokość dla mniejszych ekranów
-    height: 100px; // Dostosuj wysokość dla mniejszych ekranów
+    height: 80px; // Dostosuj wysokość dla mniejszych ekranów
    
-   display: flex;
-    align-items: center;
-    justify-content: center;
-
+   
+   
   }
 `;
 export const Socialmedia = styled.div`
@@ -69,10 +69,14 @@ export const Socialmedia = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  
 
-  @media screen and (max-width: 600px) {
-    width: 150px; // Dostosuj szerokość dla mniejszych ekranów
+  @media screen and (max-width: 768px) {
+    width: 100px; // Dostosuj szerokość dla mniejszych ekranów
     height: 80px; // Dostosuj wysokość dla mniejszych ekranów
+    align-items: center;
+   
+    
   }
 `;
 export const Menu = styled.div`
@@ -83,11 +87,19 @@ export const Menu = styled.div`
   justify-content: space-around;
   align-items: center;
   
+  
 
-  @media screen and (max-width: 431px) {
+  @media screen and (max-width: 768px) {
     width: auto; // Dostosuj szerokość dla mniejszych ekranów
     flex-direction: column;
     height: auto;
+   
+    
+    align-items: center;
+    
+    
+    width: auto;
+    
     
   }
 
@@ -103,10 +115,22 @@ export const Menu = styled.div`
     flex-direction: row; /* Poziome menu dla większych ekranów */
   }
 `;
+export const HamburgerMenu = styled.div`
+  display: none;
+  
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    cursor: pointer;
+    margin-top:90px;
+    
+    
+  }
+`;
 export const Elementsul = styled.ul`
   width: 150px;
   height: 30px;
-  border: 2px solid greenyellow;
+  
   text-align: center;
   font-size: 15px;
   line-height: 30px;
@@ -116,31 +140,36 @@ export const Elementsul = styled.ul`
   font-size: 15px;
   cursor: pointer;
   font-weight: 700;
-
+  
   @media screen and (max-width: 540px) {
      // Dostosuj szerokość dla mniejszych ekranów
     margin-bottom: 5px; // Dodaj margines na dole dla lepszego rozdzielania elementów
-    width:200px;
+    width:150px;
     height:20px;
     font-size: 15px;
     line-height: 20px;
+    overflow: hidden;
+    max-height: ${({ isOpen }) => (isOpen ? '300px' : '0')};
   }
 
   &:hover {
     li {
       display: block;
       opacity: 0.4;
+      max-height: 300px;
     }
   }
 `;
 export const Elementsli = styled.li`
-  background-color: yellow;
+  background-color: #edca05;
   list-style-type: none;
   display: none;
   width: 150px;
+  
 
   @media screen and (max-width: 768px) {
     width: 100%; // Dostosuj szerokość dla mniejszych ekranów
+    
   }
 
   &:hover {
@@ -270,9 +299,7 @@ export const Findinput = styled.input`
   border-radius: 10px;
   font-size: 20px;
   font-family: "Krub", sans-serif;
-  display: flex;
-    align-items: center;
-    justify-content: center;
+  
 
   ::placeholder {
     color: blueviolet;
@@ -287,18 +314,15 @@ export const Findinput = styled.input`
   }
 
   @media screen and (max-width: 1024px) {
-    width: 70px; // Przykładowa zmiana szerokości dla mniejszych ekranów
-    position: absolute;
+     // Przykładowa zmiana szerokości dla mniejszych ekranów
+   
    font-size: 15px;
     height:20px;
     
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+   
   }
-  @media screen and (min-width: 540px){
-    margin-right: 20px;
+  @media screen and (max-width: 540px){
+   width: 90px;
   }
 `;
 export const Title = styled.div`

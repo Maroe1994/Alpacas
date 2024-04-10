@@ -1,7 +1,8 @@
 import { Global,Boxinformation,Aboutus,Tel,Email,Adress,Facebook,Instagram,Tictok,Politic,Histories, Rules,Copyright,Firstphoto,Secondphoto,Thirdphoto,Fourthphoto,Fivephoto,
-  Menu,Elementsul,Elementsli,Wrapperli,Logo,Wrapperlogomenu,Socialmedia,Fotter,SlideWrapper,ImageBox,Findinput,Title,Contact,Media,Whatever,Photobox} from "../stylecomponents/mainsite.style";
+  Menu,HamburgerMenu,Elementsul,Elementsli,Wrapperli,Logo,Wrapperlogomenu,Socialmedia,Fotter,SlideWrapper,ImageBox,Findinput,Title,Contact,Media,Whatever,Photobox} from "../stylecomponents/mainsite.style";
 import {  useNavigate } from "react-router-dom";
 import React from "react";
+import { useState } from "react";
 
 
 import { Slider } from "./slider";
@@ -37,7 +38,11 @@ export function Mainsite () {
         }
     });
 });
+const [isOpen, setIsOpen] = useState(false);
 
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   
     const navigate = useNavigate();
     const navigateToHistory = () => {
@@ -73,21 +78,25 @@ export function Mainsite () {
         <>
         <Global/><Wrapperlogomenu>
         <Logo onClick={navigatetoMain} src="myaplaca.png"></Logo>
-        <Menu>
-            <Elementsul >O nas
-            <Wrapperli>
+        
+        <Menu >
+          <HamburgerMenu onClick={toggleMenu}>
+        <img width="120" height="40" src="icons8-hamburger-menu-50.png" alt="hamburhermenu" />
+      </HamburgerMenu>
+            <Elementsul isOpen={isOpen} >O nas
+            <Wrapperli  >
           <a href="/Historia" target="_blank" >  <Elementsli onClick={navigateToHistory}>Historia</Elementsli></a>
             <Elementsli onClick={navigatetoRules}>Regulamin</Elementsli>
             <Elementsli onClick={navigatetoPolitic}>Polityka prywatności</Elementsli>
             </Wrapperli>
             </Elementsul>
-            <Elementsul>Nasze Zwierzaki
+            <Elementsul isOpen={isOpen} >Nasze Zwierzaki
            <Wrapperli> 
             <Elementsli onClick={navigatetoAlpacas}>Alpaki</Elementsli>
             <Elementsli onClick={navigatetoParrots}>Papugi</Elementsli>
             </Wrapperli>
             </Elementsul>
-            <Elementsul onClick={navigatetoOffer}>Nasze Oferty
+            <Elementsul isOpen={isOpen} onClick={navigatetoOffer}>Nasze Oferty
             <Wrapperli>
             <Elementsli>Oferta grupowa</Elementsli>
             <Elementsli>Dla szkół</Elementsli>
@@ -95,10 +104,10 @@ export function Mainsite () {
             <Elementsli>Oferta indywidualna</Elementsli>
             </Wrapperli>
             </Elementsul>
-            <Elementsul onClick={navigatetoGaleries}>Galeria
+            <Elementsul isOpen={isOpen} onClick={navigatetoGaleries}>Galeria
             
             </Elementsul>
-            <Elementsul onClick={navigatetocontact}>Kontakt
+            <Elementsul  isOpen={isOpen} onClick={navigatetocontact}>Kontakt
             
             </Elementsul>
         </Menu><Socialmedia>
