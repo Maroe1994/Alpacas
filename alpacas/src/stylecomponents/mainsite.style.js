@@ -19,9 +19,8 @@ export const Wrapperlogomenu = styled.div`
   background-color: #048500;
   justify-content: space-between;
   display: flex;
-  position: relative;
-  top: 0;
-  position: sticky;
+  
+ 
   z-index: 100;
   align-items: center;
  
@@ -29,10 +28,11 @@ export const Wrapperlogomenu = styled.div`
   @media screen and (max-width: 768px){
 width: 100%;
 overflow-x:hidden;
-height: 100px;
+height: 600px;
+display: flex;
+flex-direction: row;
+position: static;
 
-align-items: center;
-justify-content:space-between;
 
 
 
@@ -55,10 +55,10 @@ export const Logo = styled.img`
     align-items: center;
     justify-content: center;
 
-  @media screen and (max-width: 580px) {
+  @media screen and (max-width: 768px) {
     width: 100px; // Dostosuj szerokość dla mniejszych ekranów
     height: 80px; // Dostosuj wysokość dla mniejszych ekranów
-   
+    position: relative;
    
    
   }
@@ -73,12 +73,12 @@ export const Socialmedia = styled.div`
 
   @media screen and (max-width: 768px) {
     width: 100px; // Dostosuj szerokość dla mniejszych ekranów
-    height: 80px; // Dostosuj wysokość dla mniejszych ekranów
-    align-items: center;
-   
+    height:auto; // Dostosuj wysokość dla mniejszych ekranów
+    
     
   }
 `;
+
 export const Menu = styled.div`
   width: 900px;
   height: 120px;
@@ -88,22 +88,18 @@ export const Menu = styled.div`
   align-items: center;
   
   
+  
 
   @media screen and (max-width: 768px) {
     width: auto; // Dostosuj szerokość dla mniejszych ekranów
     flex-direction: column;
     height: auto;
    
+    position: relative;
     
-    align-items: center;
-    
-    
-    width: auto;
-    
-    
-  }
+     }
 
-  @media screen and (min-width: 431px) and (max-width: 1380px) {
+  @media screen and (min-width: 769px) and (max-width: 1380px) {
     width: auto; // Dostosuj szerokość dla mniejszych ekranów
      /* Poziome menu dla bardzo małych i średnich ekranów */
     flex-wrap: wrap; /* Pozwól elementom zawijać się, gdy brakuje miejsca */
@@ -115,15 +111,27 @@ export const Menu = styled.div`
     flex-direction: row; /* Poziome menu dla większych ekranów */
   }
 `;
-export const HamburgerMenu = styled.div`
+
+export const HamburgerMenu = styled.img`
   display: none;
   
 
   @media screen and (max-width: 768px) {
     display: block;
     cursor: pointer;
-    margin-top:90px;
     
+    
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    
+   
+    :focus
+    {
+      position:absolute;
+      top:50%;
+     
+    }
     
   }
 `;
@@ -141,7 +149,7 @@ export const Elementsul = styled.ul`
   cursor: pointer;
   font-weight: 700;
   
-  @media screen and (max-width: 540px) {
+  @media screen and (max-width: 768px) {
      // Dostosuj szerokość dla mniejszych ekranów
     margin-bottom: 5px; // Dodaj margines na dole dla lepszego rozdzielania elementów
     width:150px;
@@ -150,13 +158,16 @@ export const Elementsul = styled.ul`
     line-height: 20px;
     overflow: hidden;
     max-height: ${({ isOpen }) => (isOpen ? '300px' : '0')};
+    position:relative;
+    top:120px;
+    
   }
 
   &:hover {
     li {
       display: block;
       opacity: 0.4;
-      max-height: 300px;
+      
     }
   }
 `;
@@ -208,6 +219,7 @@ export const Fotter = styled.div`
     flex-direction: column; // Zmiana kierunku flexbox na kolumnowy dla mniejszych ekranów
     height: auto;// Automatyczna wysokość dla lepszego dostosowania do zawartości
     width: 100vw;
+    display: flex;
   }
 `;
 

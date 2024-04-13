@@ -12,7 +12,7 @@ const ModalWrapper = styled.div`
   background: rgba(0, 0, 0, 0.6);
   border: 3px solid black;
   justify-content: center;
-  z-index: 2; // Wartość z-index dla modala
+  z-index: 101; // Wartość z-index dla modala
   
 `;
 

@@ -24,3 +24,24 @@ opacity: 0.3;
 color: ivory;
 
 `
+export const Wrappercontent=styled.div`
+width: 100vw;
+height:400px;
+border:3px solid red;
+margin-top:10px;
+display: flex;
+justify-content:baseline;
+align-items: center;
+`
+export const Textphoto=styled.img`
+border-radius: 50%;
+width: 400px;
+height: 400px;
+margin-left: 100px;
+border:3px solid yellow;
+`
+export const Textdecribe=styled.div`
+width: 800px;
+height: 400px;
+border:3px solid red;
+`

@@ -9,7 +9,7 @@ export const ImageWithText = styled.div`
 
 export const Imagess = styled.img`
   width: 100vw; /* Dostosuj szerokość obrazka */
-  height: 600px;
+  height: 450px;
 `;
 
 export const Textss = styled.span`

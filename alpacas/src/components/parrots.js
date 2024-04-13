@@ -2,7 +2,8 @@ import { Global } from "../stylecomponents/history.style";
 import React from "react";
 import { Wrapperlogomenu,Logo,Menu,Elementsul,Elementsli,Wrapperli,Socialmedia,Findinput,Fotter,Contact,Email,Tel,Adress,Media,Facebook,Instagram,Tictok,Whatever,Politic,Histories,Rules,Copyright} from "../stylecomponents/mainsite.style";
 import { useNavigate } from "react-router-dom";
-import { ImageWithText, Imagess,Textss } from "../stylecomponents/alpacas.style";
+import { ImageWithText, Imagess,Textss, } from "../stylecomponents/alpacas.style";
+import { Wrappercontent,Textphoto, Textdecribe } from "../stylecomponents/parrots.style";
 export function Parrots() {
     const navigate = useNavigate();
     const navigateToHistory = () => {
@@ -72,6 +73,13 @@ export function Parrots() {
         <Imagess src="parrotstitle.jpeg" alt="Obrazek" />
   <Textss>Papugi</Textss>
         </ImageWithText>
+<Wrappercontent>
+  <Textphoto src="parrottwo.jpg" alt=""/>
+  <Textdecribe>Nasze zwierzęta są zaopiekowane przez najlepszych specjalistów z branży, którzy opiekuja sie naszymi ptaszkami dzień i noc.
+    W naszej zagrodzie znajduje sie kilkanaście gatunków papug, ktore pochodzą z całego świata. Zwierzętom dostarczasna jest wysokogtunkowe ziarna, oraz owoce i warzywa najwyższej jakości aby papużki były zdrowe i mogły cieszyć oko zwiedzających.
+    Odpowiednie naświetlenie pomieszczeczenia oraz znajdująca sie tam roślinność sprawia że papugi czują się jak w swoim naturalnym środowisku
+  </Textdecribe>
+</Wrappercontent>
         <Fotter>
         <Contact>
           <Tel><img src="tel.png" alt="" width="40" height="40" margin-right="10"/>+48 531-610-730</Tel>
