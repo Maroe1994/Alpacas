@@ -95,9 +95,9 @@ const [isOpen, setIsOpen] = useState(false);
             <Elementsli onClick={navigatetoParrots}>Papugi</Elementsli>
             
             </Elementsul>
-            <Elementsul isOpen={isOpen} onClick={navigatetoOffer}>Nasze Oferty
+            <Elementsul isOpen={isOpen}  onClick={navigatetoOffer}>Nasze Oferty
             
-            <Elementsli>Oferta grupowa</Elementsli>
+            <Elementsli >Oferta grupowa</Elementsli>
             <Elementsli>Dla szkół</Elementsli>
             <Elementsli>Dla rodzin</Elementsli>
             <Elementsli>Oferta indywidualna</Elementsli>
@@ -109,7 +109,7 @@ const [isOpen, setIsOpen] = useState(false);
             <Elementsul  isOpen={isOpen} onClick={navigatetocontact}>Kontakt
             
             </Elementsul>
-            
+           
         </Menu><Socialmedia>
         <Findinput placeholder="Szukaj" type="text" id="findInput"
         />

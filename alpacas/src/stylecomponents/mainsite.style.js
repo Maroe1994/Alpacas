@@ -28,10 +28,10 @@ export const Wrapperlogomenu = styled.div`
   @media screen and (max-width: 768px){
 width: 100%;
 overflow-x:hidden;
-height: 600px;
+
 display: flex;
 flex-direction: row;
-position: static;
+
 
 
 
@@ -58,7 +58,7 @@ export const Logo = styled.img`
   @media screen and (max-width: 768px) {
     width: 100px; // Dostosuj szerokość dla mniejszych ekranów
     height: 80px; // Dostosuj wysokość dla mniejszych ekranów
-    position: relative;
+    
    
    
   }
@@ -74,6 +74,7 @@ export const Socialmedia = styled.div`
   @media screen and (max-width: 768px) {
     width: 100px; // Dostosuj szerokość dla mniejszych ekranów
     height:auto; // Dostosuj wysokość dla mniejszych ekranów
+    position: relative;
     
     
   }
@@ -81,7 +82,7 @@ export const Socialmedia = styled.div`
 
 export const Menu = styled.div`
   width: 900px;
-  height: 120px;
+  height: auto;
   margin-top: 5px;
   display: flex;
   justify-content: space-around;
@@ -93,10 +94,11 @@ export const Menu = styled.div`
   @media screen and (max-width: 768px) {
     width: auto; // Dostosuj szerokość dla mniejszych ekranów
     flex-direction: column;
-    height: auto;
-   
+    display: flex;
+   border:3px solid red;
     position: relative;
     
+   
      }
 
   @media screen and (min-width: 769px) and (max-width: 1380px) {
@@ -105,6 +107,7 @@ export const Menu = styled.div`
     flex-wrap: wrap; /* Pozwól elementom zawijać się, gdy brakuje miejsca */
     justify-content: center; /* Wyśrodkuj elementy w poziomie */
     height: auto;
+    align-items: center;
   }
 
   @media screen and (min-width: 1381px) {
@@ -119,19 +122,14 @@ export const HamburgerMenu = styled.img`
   @media screen and (max-width: 768px) {
     display: block;
     cursor: pointer;
-    
-    
+    align-items: center;
+    display: flex;
     width: 150px;
     height: 40px;
-    position: absolute;
+    position: relative;
+    float: right;
     
-   
-    :focus
-    {
-      position:absolute;
-      top:50%;
-     
-    }
+
     
   }
 `;
@@ -153,14 +151,14 @@ export const Elementsul = styled.ul`
      // Dostosuj szerokość dla mniejszych ekranów
     margin-bottom: 5px; // Dodaj margines na dole dla lepszego rozdzielania elementów
     width:150px;
-    height:20px;
+   height: 20px;
     font-size: 15px;
     line-height: 20px;
     overflow: hidden;
-    max-height: ${({ isOpen }) => (isOpen ? '300px' : '0')};
+    max-height: ${({ isOpen }) => (isOpen ? '400px' : '0')};
     position:relative;
-    top:120px;
     
+    transition: max-height 0.3s ease-in-out;
   }
 
   &:hover {
@@ -180,7 +178,7 @@ export const Elementsli = styled.li`
 
   @media screen and (max-width: 768px) {
     width: 100%; // Dostosuj szerokość dla mniejszych ekranów
-    
+    display: block;
   }
 
   &:hover {
@@ -192,11 +190,13 @@ export const Elementsli = styled.li`
 export const Wrapperli = styled.div`
   width: 150px;
   border-radius: 10px;
-  margin-top: 3px;
+  
 
   @media screen and (max-width: 768px) {
     width: 100%; // Dostosuj szerokość dla mniejszych ekranów
-    margin-bottom: 10px; // Dodaj margines na dole dla lepszego rozdzielania elementów
+    margin-bottom: 10px; 
+    height:auto;// Dodaj margines na dole dla lepszego rozdzielania elementów
+    border:3px solid blue;
   }
 
   a {
